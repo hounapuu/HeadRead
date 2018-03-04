@@ -12,10 +12,12 @@
 
 <body>
 <h1>Testlehekülg</h1>
-<fb:login-button
-        scope="public_profile,email"
-        onlogin="checkLoginState();">
-</fb:login-button>
+<p id="status">
+    <fb:login-button
+            scope="public_profile,email"
+            onlogin="checkLoginState();">
+    </fb:login-button>
+</p>
 <p>
     <button type="button" onclick="lisaTeksti()">Täida sisuga</button>
 
