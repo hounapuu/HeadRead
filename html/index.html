@@ -60,6 +60,7 @@
                 console.log('Successful login for: ' + response.name);
                 document.getElementById('status').innerHTML =
                     'Thanks for logging in, ' + response.name + '!';
+                window.location = "success.html"
             });
         }
 
@@ -78,6 +79,7 @@
     <button type="button" onclick="lisaTeksti()">Täida sisuga</button>
 
 </p>
+<div id="status"></div>
 <p id="testrida">Mingi sisu</p>
 </body>
 
