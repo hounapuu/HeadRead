@@ -12,6 +12,7 @@ use Facebook\FacebookSession;
 use Facebook\FacebookRequestException;
 use Facebook\GraphObject;
 use Facebook\GraphUser;
+
 // Initialize the Facebook PHP SDK v5.
 $fb = new Facebook\Facebook([
     'app_id'                => '159317391454778',
@@ -35,7 +36,7 @@ try {
 
 //show if the user is logged in or not
 if ($session) {
-    // Logged in
+    //Logged in
     echo ("User is logged in <br>") ;
     $response = $fb->get('/me?fields=id,name', $_SESSION['fb_access_token']);
     $user = $response -> getGraphUser();
@@ -48,7 +49,7 @@ if ($session) {
 
 } else {
     echo ("User is not logged in <br>");
-    $permissions = ['email', 'public_profile']; // Optional permissions
+    $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
     $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
     echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 }

@@ -3,6 +3,8 @@ if(!session_id()){
     session_start();
 }
 require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
+require  __DIR__ . '/database-handler.php';
+
 $fb = new Facebook\Facebook([
     'app_id' => '159317391454778',
     'app_secret' => '725df95714f605f633f67d52fe8994bf',
@@ -78,7 +80,24 @@ if (! $accessToken->isLongLived()) {
 
 $_SESSION['fb_access_token'] = (string) $accessToken;
 
+// Logged in
+
 // User is logged in with a long-lived access token.
 // You can redirect them to a members-only page.
+$dtb = new Dtb();
+$conn = $dtb->getConnection();
+if (mysqli_ping($conn)) {
+    echo ("Connection is establihed! <br>");
+    $response = $fb->get('/me?fields=name', $_SESSION['fb_access_token']);
+    $user = $response->getGraphUser();
+    if (!($dtb->isUser($user['id']))) {
+        $dtb->insertUser($user['id'], $user['name'], $user['email']);
+    }
+
+
+
+} else {
+    printf(mysqli_error($conn));
+}
 header('Location: http://46.101.78.158/login.php');
 ?>
