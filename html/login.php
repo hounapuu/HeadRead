@@ -1,8 +1,12 @@
 <?php
-if(!session_id()){
+require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
+require_once "database-handler.php";
+
+if (!session_id()) {
     session_start();
 }
-require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
+
+
 use Facebook\FacebookJavaScriptLoginHelper;
 use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookRequest;
@@ -15,20 +19,20 @@ use Facebook\GraphUser;
 
 // Initialize the Facebook PHP SDK v5.
 $fb = new Facebook\Facebook([
-    'app_id'                => '159317391454778',
-    'app_secret'            => '725df95714f605f633f67d52fe8994bf',
+    'app_id' => '159317391454778',
+    'app_secret' => '725df95714f605f633f67d52fe8994bf',
     'default_graph_version' => 'v2.10',
 ]);
 
-$helper = $fb -> getRedirectLoginHelper();
+$helper = $fb->getRedirectLoginHelper();
 
 try {
     $session = $_SESSION['fb_access_token'];
-} catch(FacebookRequestException $ex) {
+} catch (FacebookRequestException $ex) {
     // When Facebook returns an error
     echo "tere";
 
-} catch(\Exception $ex) {
+} catch (\Exception $ex) {
     // When validation fails or other local issues
     echo "tere";
 
@@ -37,23 +41,26 @@ try {
 //show if the user is logged in or not
 if ($session) {
     //Logged in
-    echo ("User is logged in <br>") ;
+    echo("User is logged in <br>");
     $response = $fb->get('/me?fields=id,name', $_SESSION['fb_access_token']);
-    $user = $response -> getGraphUser();
+    $user = $response->getGraphUser();
     echo "Tere, " . $user['name'] . "<br>";
     $logout_url = "logout.php";
-    echo  "<a href=" . $logout_url . ">Log out </a>";
-
-
+    $dtb = new Dtb();
+    $conn = $dtb->getConnection();
+    $andmed = $dtb->getUserData($user['id']);
+    echo "Viimane sisselogimine: " . $andmed[0] . "<br>";
+    echo "IP-aadressilt : " . $andmed[1] . "<br>";
+    echo "<a href=" . $logout_url . ">Log out </a><br>";
 
 
 } else {
-    echo ("User is not logged in <br>");
+
+    echo("User is not logged in <br>");
     $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
     $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
     echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 }
-
 
 
 ?>

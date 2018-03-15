@@ -86,12 +86,14 @@ $_SESSION['fb_access_token'] = (string) $accessToken;
 // You can redirect them to a members-only page.
 $dtb = new Dtb();
 $conn = $dtb->getConnection();
+$_SESSION['dtb'] = $dtb;
 if (mysqli_ping($conn)) {
     echo ("Connection is establihed! <br>");
     $response = $fb->get('/me?fields=name', $_SESSION['fb_access_token']);
     $user = $response->getGraphUser();
-    if (!($dtb->isUser($user['id']))) {
-        $dtb->insertUser($user['id'], $user['name'], $user['email']);
+    $ipaddr =  $_SERVER['REMOTE_ADDR'];
+    if (!($dtb->isUser($user['id'], $ipaddr))) {
+        $dtb->insertUser($user['id'], $user['name'], $user['email'], $ipaddr);
     }
 
 
