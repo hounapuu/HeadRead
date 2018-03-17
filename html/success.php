@@ -12,14 +12,14 @@
 <body>
 <body>
 <div class="languages-flags">
-    <a href="index.php?language=est"><img src="img/est.png" ></a>
-    <a href="index.php?language=en"><img src="img/eng.png" ></a>
+    <a href="success.php?language=est"><img src="img/est.png" ></a>
+    <a href="success.php?language=en"><img src="img/eng.png" ></a>
     <div class="clear"></div>
 </div>
 
 
 <p><?= $LogInSuccess ?>
-<div class="tooltip"><img src="img/qm.png">
+<div class="tooltip"><img src="img/qm.png" style="float: left">
     <span class="tooltiptext"><?=$tooltipText?></span>
 </div>
 </p>
