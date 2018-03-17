@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/html/index.php" afterPath="$PROJECT_DIR$/html/index.php" />
-      <change beforePath="$PROJECT_DIR$/html/js/testscript.js" afterPath="$PROJECT_DIR$/html/js/testscript.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,17 +13,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
-              <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+              <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testscript.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testscript.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/js/testscript.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -123,8 +122,8 @@
         <option value="$PROJECT_DIR$/html/i18n/est.php" />
         <option value="$PROJECT_DIR$/html/i18n/en.php" />
         <option value="$PROJECT_DIR$/html/style.css" />
-        <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/html/js/testscript.js" />
+        <option value="$PROJECT_DIR$/html/index.php" />
       </list>
     </option>
   </component>
@@ -313,12 +312,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521283603744</updated>
       <workItem from="1521283604943" duration="81000" />
-      <workItem from="1521283707849" duration="4146000" />
+      <workItem from="1521283707849" duration="4212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4227000" />
+    <option name="totallyTimeSpent" value="4293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="46" width="1296" height="1000" extended-state="6" />
@@ -411,22 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/i18n/i18n.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="50" lean-forward="false" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/facebook_login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -439,6 +422,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/i18n/i18n.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="75" lean-forward="false" selection-start-line="28" selection-start-column="75" selection-end-line="28" selection-end-column="75" />
           <folding />
         </state>
       </provider>
