@@ -1,7 +1,7 @@
-function lisaTeksti() {
+function lisaTeksti(keel) {
 
     var element = document.getElementById("testrida");
-    var text = "Lisatud rida";
+    var text = keel=== "est"?"Lisatud rida":"Added line";
 
     element.innerHTML = element.innerHTML + "<br>" + text;
 };

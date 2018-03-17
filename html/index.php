@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title><?= $pageTitileLogIn ?></title>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <script src="js/facebook_login.js" type="text/javascript"></script>
     <script src="js/testscript.js" type="text/javascript"></script>
 </head>
@@ -26,7 +26,7 @@
     </fb:login-button>
 </p>
 <p>
-    <button type="button" onclick="lisaTeksti()"><?= $addLine ?></button>
+    <button type="button" onclick="lisaTeksti(<?= $_COOKIE['language'] ?>)"><?= $addLine ?></button>
 
 </p>
 <p id="testrida"><?= $randomLines ?></p>
