@@ -39,10 +39,14 @@ div.languages-flags img {
     z-index: 1;
 }
 
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
-    bottom: 100%; 
+    bottom: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
