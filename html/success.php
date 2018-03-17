@@ -19,7 +19,7 @@
 
 
 <p><?= $LogInSuccess ?>
-<div class="tooltip"><img src="img/qm.png" style="float: left">
+<div class="tooltip"><img src="img/qm.png" style="float: right">
     <span class="tooltiptext"><?=$tooltipText?></span>
 </div>
 </p>

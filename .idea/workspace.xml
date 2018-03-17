@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/html/i18n/est.php" afterPath="$PROJECT_DIR$/html/i18n/est.php" />
-      <change beforePath="$PROJECT_DIR$/html/style.css" afterPath="$PROJECT_DIR$/html/style.css" />
       <change beforePath="$PROJECT_DIR$/html/success.php" afterPath="$PROJECT_DIR$/html/success.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/html/success.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+              <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -307,12 +304,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521283603744</updated>
       <workItem from="1521283604943" duration="81000" />
-      <workItem from="1521283707849" duration="6532000" />
+      <workItem from="1521283707849" duration="6613000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6613000" />
+    <option name="totallyTimeSpent" value="6694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="46" width="1296" height="1000" extended-state="6" />
@@ -432,7 +429,7 @@
     <entry file="file://$PROJECT_DIR$/html/success.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="61" lean-forward="false" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+          <caret line="21" column="62" lean-forward="false" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
