@@ -26,7 +26,7 @@
     </fb:login-button>
 </p>
 <p>
-    <button type="button" onclick="lisaTeksti('<?= $_COOKIE['language'] ?>')"><?= $addLine ?></button>
+    <button type="button" onclick="lisaTeksti()"><?= $addLine ?></button>
 
 </p>
 <p id="testrida"><?= $randomLines ?></p>
