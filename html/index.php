@@ -15,8 +15,9 @@
 
 <body>
 
-<a href="index.php?language=est"><img src="img/est.png"></a>
-<a href="index.php?language=en"><img src="img/eng.png"></a>
+<a href="index.php?language=est"><img src="img/est.png" style="float: left;"></a>
+<p></p>
+<a href="index.php?language=en"><img src="img/eng.png" style="float: left"></a>
 
 <h1><?= $testpage ?></h1>
 <p id="status">
