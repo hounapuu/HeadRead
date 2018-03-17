@@ -15,13 +15,13 @@
 
 <body>
 <div class="languages-flags">
-<a href="index.php?language=est"><img src="img/est.png" ></a>
-<a href="index.php?language=en"><img src="img/eng.png" ></a>
+    <a href="index.php?language=est"><img src="img/est.png"></a>
+    <a href="index.php?language=en"><img src="img/eng.png"></a>
     <div class="clear"></div>
 </div>
 
 <h1><?= $testpage ?></h1>
-<p id="status">
+<p id="status" style=" text-align: center">
     <fb:login-button
             scope="public_profile,email"
             onlogin="checkLoginState();">
