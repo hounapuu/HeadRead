@@ -25,10 +25,6 @@
             onlogin="checkLoginState();">
     </fb:login-button>
 </p>
-<p>
-    <button type="button" onclick="lisaTeksti()"><?= $addLine ?></button>
-
-</p>
 <p id="testrida"><?= $randomLines ?></p>
 </body>
 

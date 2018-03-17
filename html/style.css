@@ -1,4 +1,14 @@
 img{
     max-height: 10px;
     max-width: 20px;
+    alignment: right;
+}
+h1{
+    alignment: center;
+}
+a{
+    alignment: center;
+}
+p{
+    alignment: center;
 }
