@@ -14,10 +14,10 @@
 </head>
 
 <body>
-
+<div>
 <a href="index.php?language=est"><img src="img/est.png" style="float: right;"></a>
 <a href="index.php?language=en"><img src="img/eng.png" style="float: right"></a>
-
+</div>
 
 <h1><?= $testpage ?></h1>
 <p id="status">
