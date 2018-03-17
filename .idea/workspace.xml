@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/html/style.css" afterPath="$PROJECT_DIR$/html/style.css" />
+      <change beforePath="$PROJECT_DIR$/html/i18n/en.php" afterPath="$PROJECT_DIR$/html/i18n/en.php" />
+      <change beforePath="$PROJECT_DIR$/html/i18n/est.php" afterPath="$PROJECT_DIR$/html/i18n/est.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -53,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="est.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="est.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/i18n/est.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+            <state relative-caret-position="17">
+              <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -76,8 +77,8 @@
       <file leaf-file-name="en.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/i18n/en.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -110,10 +111,10 @@
         <option value="$PROJECT_DIR$/html/i18n/i18n.php" />
         <option value="$PROJECT_DIR$/html/js/testscript.js" />
         <option value="$PROJECT_DIR$/html/success.php" />
-        <option value="$PROJECT_DIR$/html/i18n/en.php" />
-        <option value="$PROJECT_DIR$/html/i18n/est.php" />
         <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/html/style.css" />
+        <option value="$PROJECT_DIR$/html/i18n/est.php" />
+        <option value="$PROJECT_DIR$/html/i18n/en.php" />
       </list>
     </option>
   </component>
@@ -124,7 +125,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1456" />
     <option name="y" value="70" />
     <option name="width" value="1400" />
@@ -302,15 +303,15 @@
       <option name="presentableId" value="Default" />
       <updated>1521283603744</updated>
       <workItem from="1521283604943" duration="81000" />
-      <workItem from="1521283707849" duration="5663000" />
+      <workItem from="1521283707849" duration="5731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5744000" />
+    <option name="totallyTimeSpent" value="5812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1288" y="46" width="1296" height="1000" extended-state="6" />
+    <frame x="-1288" y="46" width="1296" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -384,22 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/i18n/en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/i18n/est.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/facebook_login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-214">
@@ -428,6 +413,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/i18n/en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/i18n/est.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
           <folding />
         </state>
       </provider>
