@@ -1,3 +1,4 @@
+<!--Estonian language texts-->
 <?php
 $testpage = "Paremad Read";
 $pageTitileLogIn = "Paremad Read logi sisse";

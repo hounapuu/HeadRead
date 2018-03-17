@@ -1,3 +1,4 @@
+<!--English language texts-->
 <?php
 $testpage = "Better Reads";
 $pageTitileLogIn = "Better Reads Log In";

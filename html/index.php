@@ -1,3 +1,4 @@
+<!-- Connects language files to this file-->
 <?php include("i18n/i18n.php"); ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -14,20 +15,24 @@
 </head>
 
 <body>
+<!--Language selection flags-->
 <div class="languages-flags">
     <a href="index.php?language=est"><img src="img/est.png"></a>
     <a href="index.php?language=en"><img src="img/eng.png"></a>
     <div class="clear"></div>
 </div>
 
+<!-- Page name-->
 <h1><?= $testpage ?></h1>
-<p id="status" style=" text-align: center">
+<!-- Facebook log in-->
+<p id="status" >
     <fb:login-button
             scope="public_profile,email"
             onlogin="checkLoginState();">
     </fb:login-button>
 </p>
-<p id="testrida" style="text-align: center;"><?= $randomLines ?></p>
+<!--Random testing line-->
+<p id="testrida" ><?= $randomLines ?></p>
 </body>
 
 </html>
