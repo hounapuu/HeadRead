@@ -27,7 +27,7 @@
             onlogin="checkLoginState();">
     </fb:login-button>
 </p>
-<p id="testrida"><?= $randomLines ?></p>
+<p id="testrida" style="text-align: center;"><?= $randomLines ?></p>
 </body>
 
 </html>
