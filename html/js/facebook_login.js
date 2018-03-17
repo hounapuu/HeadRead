@@ -51,6 +51,6 @@ function testAPI() {
         console.log('Successful login for: ' + response.name);
         document.getElementById('status').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
-        window.location = "success.html"
+        window.location = "success.php"
     });
 }
