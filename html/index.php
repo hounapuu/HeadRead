@@ -8,6 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title><?= $pageTitileLogIn ?></title>
 
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="js/facebook_login.js" type="text/javascript"></script>
     <script src="js/testscript.js" type="text/javascript"></script>
 </head>
