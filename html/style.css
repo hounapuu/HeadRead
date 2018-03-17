@@ -42,18 +42,6 @@ div.languages-flags img {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-
-.tooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent darkgray transparent;
-}
-
 h1{
     text-align: center;
     margin-top: 100px;

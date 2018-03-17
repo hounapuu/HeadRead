@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/html/success.php" afterPath="$PROJECT_DIR$/html/success.php" />
+      <change beforePath="$PROJECT_DIR$/html/style.css" afterPath="$PROJECT_DIR$/html/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+            <state relative-caret-position="619">
+              <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="success.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="success.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/success.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -112,8 +112,8 @@
         <option value="$PROJECT_DIR$/html/i18n/en.php" />
         <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/html/i18n/est.php" />
-        <option value="$PROJECT_DIR$/html/style.css" />
         <option value="$PROJECT_DIR$/html/success.php" />
+        <option value="$PROJECT_DIR$/html/style.css" />
       </list>
     </option>
   </component>
@@ -302,12 +302,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521283603744</updated>
       <workItem from="1521283604943" duration="81000" />
-      <workItem from="1521283707849" duration="6942000" />
+      <workItem from="1521283707849" duration="6972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7023000" />
+    <option name="totallyTimeSpent" value="7053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="46" width="1296" height="1000" extended-state="6" />
@@ -400,14 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/i18n/i18n.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -428,6 +420,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
           <folding />
         </state>
       </provider>
