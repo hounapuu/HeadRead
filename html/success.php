@@ -18,11 +18,11 @@
 </div>
 
 
-<p><?= $LogInSuccess ?></p>
-<div class="tooltip"><img src="img/qm.png">
+<p><?= $LogInSuccess ?>
+<span class="tooltip"><img src="img/qm.png">
     <span class="tooltiptext"><?=$tooltipText?></span>
-</div>
-
+</span>
+</p>
 
 </body>
 </html>
