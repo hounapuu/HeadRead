@@ -5,9 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="" xmlns="" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title><?php $LogInSuccessTitle?></title>
+    <title><?= $LogInSuccessTitle?></title>
 </head>
 <body>
-<p><?php $LogInSuccess ?></p>
+<p><?= $LogInSuccess ?></p>
 </body>
 </html>
