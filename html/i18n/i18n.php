@@ -2,7 +2,7 @@
 if (!empty($_GET['language'])) {
     $_COOKIE['language'] = $_GET['language'] === 'est' ? 'est' : 'en';
 } else {
-    $_COOKIE['language'] = 'en';
+    $_COOKIE['language'] = 'est';
 }
 setcookie('language', $_COOKIE['language']);
 

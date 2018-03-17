@@ -6,13 +6,17 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Head Read avaleht</title>
+    <title><?= $pageTitileLogIn ?></title>
 
     <script src="js/facebook_login.js" type="text/javascript"></script>
     <script src="js/testscript.js" type="text/javascript"></script>
 </head>
 
 <body>
+
+<a href="index.php?language=est"><img src="img/est.png"></a>
+<a href="index.php?language=en"><img src="img/eng.png"></a>
+
 <h1><?= $testpage ?></h1>
 <p id="status">
     <fb:login-button
@@ -21,10 +25,10 @@
     </fb:login-button>
 </p>
 <p>
-    <button type="button" onclick="lisaTeksti()">Täida sisuga</button>
+    <button type="button" onclick="lisaTeksti()"><?= $addLine ?></button>
 
 </p>
-<p id="testrida">Mingi sisu</p>
+<p id="testrida"><?= $randomLines ?></p>
 </body>
 
 </html>
