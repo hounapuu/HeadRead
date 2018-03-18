@@ -84,7 +84,7 @@ use Facebook\FacebookRequestException;
 
     } else {
         ?>
-        <?=$isNotLoggedin;?><br>
+        <?=$isNotLoggedin;?><br/>
         <?php
         $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
         $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
