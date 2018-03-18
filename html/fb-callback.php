@@ -89,7 +89,7 @@ $conn = $dtb->getConnection();
 $_SESSION['dtb'] = $dtb;
 if (mysqli_ping($conn)) {
     echo ("Connection is establihed! <br>");
-    $response = $fb->get('/me?fields=name', $_SESSION['fb_access_token']);
+    $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
     $user = $response->getGraphUser();
     $ipaddr =  $_SERVER['REMOTE_ADDR'];
     if (!($dtb->isUser($user['id'], $ipaddr))) {

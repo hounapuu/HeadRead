@@ -42,7 +42,7 @@ try {
 if ($session) {
     //Logged in
     echo("User is logged in <br>");
-    $response = $fb->get('/me?fields=id,name', $_SESSION['fb_access_token']);
+    $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
     $user = $response->getGraphUser();
     echo "Tere, " . $user['name'] . "<br>";
     $logout_url = "logout.php";
