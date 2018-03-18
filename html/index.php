@@ -20,7 +20,7 @@ use Facebook\FacebookRequestException;
     <title><?= $pageTitileLogIn ?></title>
 
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src="js/testscript.js" type="text/javascript"></script>
+    <script src="js/googlemaps.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -95,7 +95,8 @@ use Facebook\FacebookRequestException;
 <!--Random testing line-->
 <p id="testrida" ><?= $randomLines ?></p>
 
-<div id="map"></div>
+<p id="map" onload="initMap()"></p>
+<!--
 <script>
     function initMap() {
         var uluru = {lat: 58.37821334, lng: 26.71465933};
@@ -113,6 +114,7 @@ use Facebook\FacebookRequestException;
         });
     }
 </script>
+-->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&callback=initMap">
 </script>
