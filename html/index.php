@@ -23,7 +23,7 @@ use Facebook\FacebookRequestException;
     <script src="js/googlemaps.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="initMap()">
 <!--Language selection flags-->
 <div class="languages-flags">
     <a href="index.php?language=est"><img src="img/est.png" alt="eesti keeles"/></a>
@@ -95,7 +95,7 @@ use Facebook\FacebookRequestException;
 <!--Random testing line-->
 <p id="testrida" ><?= $randomLines ?></p>
 
-<p id="map" onload="initMap()"></p>
+<p id="map"></p>
 <!--
 <script>
     function initMap() {
