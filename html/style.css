@@ -23,6 +23,10 @@ div.languages-flags img {
     position: relative;
     display: inline-block;
 }
+.tooltip img{
+    max-width: 10px;
+    max-height: 10px;
+}
 /*Tooltip text style*/
 .tooltip .tooltiptext {
     visibility: hidden;
