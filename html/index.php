@@ -32,7 +32,11 @@ use Facebook\FacebookRequestException;
 </div>
 
 <!-- Page name-->
-<h1><?= $testpage ?></h1>
+<h1><?= $testpage ?>
+    <!--Tooltip-->
+    <span class="tooltip"><img src="img/qm.png">
+    <span class="tooltiptext"><?=$tooltipText?></span>
+</span></h1>
 <!-- Facebook log in-->
 <p id="status" >
     <?php
