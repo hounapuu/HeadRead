@@ -12,6 +12,4 @@ function initMap() {
     google.maps.event.addListener(marker, 'click', function() {
         alert(this.customInfo);
     });
-    async; defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&callback=initMap";
 }

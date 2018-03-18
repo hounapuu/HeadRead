@@ -114,10 +114,10 @@ use Facebook\FacebookRequestException;
         });
     }
 </script>
-<script async defer
+-->
+<script defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&callback=initMap">
 </script>
--->
 </body>
 
 </html>
