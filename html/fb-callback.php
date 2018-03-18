@@ -101,5 +101,5 @@ if (mysqli_ping($conn)) {
 } else {
     printf(mysqli_error($conn));
 }
-header('Location: http://46.101.78.158/login.php');
+header('Location: http://46.101.78.158/');
 ?>
