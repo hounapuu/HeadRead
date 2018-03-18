@@ -34,7 +34,7 @@ use Facebook\FacebookRequestException;
 <!-- Page name-->
 <h1><?= $testpage ?>
     <!--Tooltip-->
-    <span class="tooltip"><img src="img/qm.png" alt="info">
+    <span class="tooltip"><img src="img/qm.png" alt="info"/>
     <span class="tooltiptext"><?=$tooltipText?></span>
 </span></h1>
 <!-- Facebook log in-->
