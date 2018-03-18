@@ -19,13 +19,6 @@ use Facebook\FacebookRequestException;
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title><?= $pageTitileLogIn ?></title>
 
-    <style>
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-    </style>
-
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script src="js/testscript.js" type="text/javascript"></script>
 </head>

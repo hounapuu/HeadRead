@@ -53,3 +53,8 @@ a{
 p{
     text-align: center
 }
+/*google map*/
+#map{
+    height: 400px;
+    width:100%;
+}
