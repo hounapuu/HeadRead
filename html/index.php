@@ -116,7 +116,7 @@ use Facebook\FacebookRequestException;
 </script>
 -->
 <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&callback=initMap" type="text/javascript">
 </script>
 </body>
 
