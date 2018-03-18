@@ -91,7 +91,7 @@ use Facebook\FacebookRequestException;
     }
 
     ?>
-
+</p>
 <!--Random testing line-->
 <p id="testrida" ><?= $randomLines ?></p>
 
