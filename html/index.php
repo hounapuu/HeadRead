@@ -79,7 +79,7 @@ use Facebook\FacebookRequestException;
         ?>
         <?= $loginTime  . $andmed[0]; ?>. <br/>
         <?= $ipMessage  . $andmed[1]; ?>. <br/>
-        <a href=<?=$logout_url?>><?=$logoutMessage?></a>
+        <a href="<?=$logout_url?>"><?=$logoutMessage?></a>
         <?php
 
     } else {
@@ -89,7 +89,7 @@ use Facebook\FacebookRequestException;
         $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
         $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
         ?>
-        <a href=<?=$loginUrl?>><?=$loginLink?></a>
+        <a href="<?=$loginUrl?>"><?=$loginLink?></a>
         <?php
 
     }
