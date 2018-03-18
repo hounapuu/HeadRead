@@ -43,6 +43,7 @@ div.languages-flags img {
 /*Tooltip text style when hovered*/
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    font-size: 15px;
 }
 /*h1 title style*/
 h1{

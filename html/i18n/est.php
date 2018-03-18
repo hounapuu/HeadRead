@@ -1,7 +1,7 @@
 <!--Estonian language texts-->
 <?php
 $testpage = "Paremad Read";
-$pageTitileLogIn = "Paremad Read logi sisse";
+$pageTitileLogIn = "Paremad Read";
 $randomLines = "Mingi sisu";
 $LogInSuccessTitle="Edukas sisselogimine";
 $LogInSuccess="Edukas sisselogimine";

@@ -1,7 +1,7 @@
 <!--English language texts-->
 <?php
-$testpage = "Better Reads";
-$pageTitileLogIn = "Better Reads Log In";
+$testpage = "Paremad Read";
+$pageTitileLogIn = "Paremad Read";
 $randomLines = "Random line";
 $LogInSuccessTitle="Successful Log In";
 $LogInSuccess="Your log in was a success!";
