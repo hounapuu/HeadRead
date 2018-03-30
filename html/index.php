@@ -1,4 +1,7 @@
 <!-- Connects language files to this file-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
 <?php include_once("i18n/i18n.php");
 require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
 require_once "database-handler.php";
@@ -11,7 +14,6 @@ use Facebook\FacebookRequestException;
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -19,7 +21,7 @@ use Facebook\FacebookRequestException;
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title><?= $pageTitileLogIn ?></title>
 
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="js/googlemaps.js" type="text/javascript"></script>
 </head>
 
@@ -109,7 +111,7 @@ use Facebook\FacebookRequestException;
 
 <p id="map"></p>
 <script defer = "defer"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&callback=initMap" type="text/javascript">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&amp;callback=initMap" type="text/javascript">
 </script>
 </body>
 
