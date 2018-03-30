@@ -13,6 +13,7 @@ $loginTime = "Logged in at: ";
 $helloMessage = "Hello, ";
 $ipMessage = "From IP-address: ";
 $logoutMessage = "Log out";
+$userCount = "Registered users: "
 
 
 

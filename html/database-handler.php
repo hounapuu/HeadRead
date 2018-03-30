@@ -23,6 +23,19 @@ Class Dtb
 
     }
 
+    public function getUserCount()
+    {
+        $query = mysqli_prepare(self::getConnection(), "
+        SELECT COUNT(*) FROM  headread.kasutaja");
+        $query->execute();
+        $result =  mysqli_stmt_get_result($query);
+        $rows = mysqli_fetch_row($result);
+
+        mysqli_stmt_free_result($query); // vabastame päringu vastuse
+        mysqli_stmt_close($query); // sulgeme lause
+        mysqli_free_result($result);
+        return $rows[0];
+    }
 
     public function getUserData($uid)
     {

@@ -39,6 +39,7 @@ use Facebook\FacebookRequestException;
 </span></h1>
 <!-- Facebook log in-->
 <p id="status" >
+    <!--TODO: cleanup !-->
     <?php
     // Initialize the Facebook PHP SDK v5.
     $fb = new Facebook\Facebook([
@@ -76,10 +77,15 @@ use Facebook\FacebookRequestException;
         $dtb = new Dtb();
         $conn = $dtb->getConnection();
         $andmed = $dtb->getUserData($user['id']);
+        $users = $dtb->getUserCount();
         ?>
+        <?= $userCount  . $users; ?> <br/>
+
         <?= $loginTime  . $andmed[0]; ?>. <br/>
         <?= $ipMessage  . $andmed[1]; ?>. <br/>
-        <a href="<?=$logout_url?>"><?=$logoutMessage?></a>
+        <form id="loginoutbutton" action="<?= $logout_url ?>" method="post">
+            <button><?=$logoutMessage?></button>
+        </form>
         <?php
 
     } else {
@@ -89,7 +95,9 @@ use Facebook\FacebookRequestException;
         $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
         $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
         ?>
-        <a href="<?=$loginUrl?>"><?=$loginLink?></a>
+        <form id="loginoutbutton" action="<?= $loginUrl ?>" method="post">
+            <button><?=$loginLink?></button>
+        </form>
         <?php
 
     }
@@ -100,26 +108,7 @@ use Facebook\FacebookRequestException;
 <p id="testrida" ><?= $randomLines ?></p>
 
 <p id="map"></p>
-<!--
-<script>
-    function initMap() {
-        var uluru = {lat: 58.37821334, lng: 26.71465933};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 17,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-        marker['customInfo'] = "Siin on meie töökoht!";
-        google.maps.event.addListener(marker, 'click', function() {
-            alert(this.customInfo);
-        });
-    }
-</script>
--->
-<script defer
+<script defer = "defer"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&callback=initMap" type="text/javascript">
 </script>
 </body>

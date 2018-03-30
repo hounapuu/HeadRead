@@ -13,5 +13,6 @@ $loginTime = "Sisse logitud: ";
 $helloMessage = "Tere, ";
 $ipMessage = "IP-aadressilt: ";
 $logoutMessage = "Logi välja";
+$userCount = "Registreerunud kasutajaid: "
 
 ?>
