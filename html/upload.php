@@ -11,39 +11,43 @@ $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
 if (isset($_POST["submit"])) {
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if (strpos($_FILES["fileToUpload"]["name"], '.php') !== false){
+        alert("php faili ei saa üles laadida");
+        $uploadOk = 0;
+    }
     if ($check !== false) {
-        alert("File is an image - " . $check["mime"] . ".");
+        alert("Fail on pilt - " . $check["mime"] . ".");
         $uploadOk = 1;
     } else {
-        alert("File is not an image.");
+        alert("Fail ei ole pilt.");
         $uploadOk = 0;
     }
     // Check if file already exists
     if (file_exists($target_file)) {
-        alert("Sorry, file already exists.");
+        alert("Fail juba eksisteerib.");
         $uploadOk = 0;
     }
     // Check file size
     if ($_FILES["fileToUpload"]["size"] > 500000) {
-        alert("Sorry, your file is too large.");
+        alert("Fail on liiga suur (max 500kB).");
         $uploadOk = 0;
     }
     // Allow certain file formats
     if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
         && $imageFileType != "gif") {
-        alert("Sorry, only JPG, JPEG, PNG & GIF files are allowed.");
+        alert("Fail peab olema jpg, jpeg, png või gif formaadis.");
         $uploadOk = 0;
     }
     // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
-        alert("Sorry, your file was not uploaded.");
+        alert("Faili üleslaadimine ebaõnnestus.");
         // if everything is ok, try to upload file
     } else {
         echo $_FILES["fileToUpload"]["tmp_name"];
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-            alert("The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.");
+            alert("Fail " . basename($_FILES["fileToUpload"]["name"]) . " laeti üles.");
         } else {
-            alert("Sorry, there was an error uploading your file.");
+            alert("Faili üleslaadimine ebaõnnestus.");
         }
     }
 }
