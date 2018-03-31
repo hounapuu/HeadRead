@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    text-align: center
 }
 
 /*Language flag style*/
@@ -62,10 +63,6 @@ a{
 p{
     text-align: center
 }
-text{
-    text-align: center
-}
-
 #loginoutbutton{
     text-align: center;
 }
@@ -106,6 +103,8 @@ text{
 .main {
     margin-top: 100px; /* Add a top margin to avoid content overlay */
 }
+
+/*Payment button style*/
 #pangalink .centerMe {
     position: absolute;
     left: 50%;
