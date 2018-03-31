@@ -111,5 +111,5 @@ if (mysqli_ping($conn)) {
 } else {
     printf(mysqli_error($conn));
 }
-header('Location: http://headread.ninata.ga');
+header('Location: http://46.101.78.158/');
 ?>
