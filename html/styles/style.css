@@ -67,3 +67,33 @@ p{
     height: 400px;
     width:100%;
 }
+
+/* The navigation bar */
+.navigationbar {
+    overflow: hidden;
+    background-color: #FAEBD7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Links inside the navbar */
+.navigationbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navigationbar a:hover {
+    background: #DEB887;
+    color: black;
+}
+
+/* Main content */
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}

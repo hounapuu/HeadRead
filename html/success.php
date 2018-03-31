@@ -4,7 +4,6 @@
 
 <?php include("i18n/i18n.php"); ?>
 
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
@@ -18,6 +17,12 @@
     <a href="success.php?language=est"><img src="img/est.png" alt="eesti keeles"/></a>
     <a href="success.php?language=en"><img src="img/eng.png" alt="in english"/></a>
     <div class="clear"></div>
+</div>
+
+<div class="navigationbar">
+    <a href="success.php">Avaleht</a>
+    <a href="kontakt.php">Kontakt</a>
+    <a href="statistika.php">Statistika</a>
 </div>
 
 <!--Log in text-->
