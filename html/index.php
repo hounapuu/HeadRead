@@ -34,6 +34,7 @@ use Facebook\FacebookRequestException;
     <div class="clear"></div>
 </div>
 
+<!-- Navbar-->
 <div id="navbar-placeholder"></div>
 <script>
     $(function(){
