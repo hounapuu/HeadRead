@@ -19,12 +19,6 @@
     <div class="clear"></div>
 </div>
 
-<div class="navigationbar">
-    <a href="success.php">Avaleht</a>
-    <a href="kontakt.php">Kontakt</a>
-    <a href="statistika.php">Statistika</a>
-</div>
-
 <!--Log in text-->
 <p style="text-align: left;"><?= $LogInSuccess ?>
     <!--Tooltip-->

@@ -33,6 +33,12 @@ use Facebook\FacebookRequestException;
     <div class="clear"></div>
 </div>
 
+<div class="navigationbar">
+    <a href="success.php">Avaleht</a>
+    <a href="kontakt.php">Kontakt</a>
+    <a href="statistika.php">Statistika</a>
+</div>
+
 <!-- Page name-->
 <h1><?= $testpage ?>
     <!--Tooltip-->
