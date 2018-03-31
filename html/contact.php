@@ -31,15 +31,15 @@ include_once "pay.php";
         <?php endforeach; ?>
             <tr><td colspan="2"><input type="submit" value="Edasi panga lehele" /></td></tr>
     </form>
-
-    get:
+    
     <?php
-    print_r($_GET);
-    ?>
-    <br/>
-    post:
-    <?php
-    print_r($_POST);
+    if($_GET["payment_action"]=="success"){
+        echo "Annetus edukalt tehtud. Me täname Teid!";
+    } elseif ($_GET["payment_action"]=="cancel"){
+        echo "Makse jäi pooleli. Lõpetage see nüüd!";
+    }else{
+        echo "Te pole veel annetanud. Tehke seda praegu! (See näide töötab juhul, kui teie arvutis töötab pangalink.net rakendus)";
+    }
     ?>
 
 </body>
