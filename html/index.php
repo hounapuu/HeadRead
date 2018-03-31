@@ -1,7 +1,7 @@
-<!-- Connects language files to this file-->
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
+<!-- Connects language files to this file-->
 <?php
     include_once("i18n/i18n.php");
     require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
@@ -14,8 +14,6 @@
     use Facebook\FacebookRequestException;
 ?>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
@@ -33,6 +31,7 @@
 </head>
 
 <body onload="initMap()">
+
 <!--Language selection flags-->
 <div class="languages-flags">
     <a href="index.php?language=est"><img src="img/est.png" alt="eesti keeles"/></a>
@@ -42,8 +41,8 @@
 
 <!-- Navbar-->
 <div id="navbar-placeholder"></div>
-<script>
-    $(function(){
+<script type="text/javascript">
+    $(function() {
         $("#navbar-placeholder").load("navigationbar.html", function () {
             $("#navbarHome").addClass("navbarActive");
         });
@@ -52,10 +51,13 @@
 
 <!-- Page name-->
 <h1><?= $testpage ?>
-    <!--Tooltip-->
+<!--Tooltip-->
     <span class="tooltip"><img src="img/qm.png" alt="info"/>
-    <span class="tooltiptext"><?= $tooltipText ?></span>
-</span></h1>
+    <span class="tooltiptext"><?= $tooltipText ?>
+    </span>
+    </span>
+</h1>
+
 <!-- Facebook log in-->
 <p id="status">
     <!--TODO: cleanup !-->
@@ -87,16 +89,16 @@
     ?>
     <?= $isLoggedin; ?><br/>
     <?php
-    $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
-    $user = $response->getGraphUser();
+        $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
+        $user = $response->getGraphUser();
     ?>
     <?= $helloMessage . $user['name']; ?>. <br/>
     <?php
-    $logout_url = "logout.php";
-    $dtb = new Dtb();
-    $conn = $dtb->getConnection();
-    $andmed = $dtb->getUserData($user['id']);
-    $users = $dtb->getUserCount();
+        $logout_url = "logout.php";
+        $dtb = new Dtb();
+        $conn = $dtb->getConnection();
+        $andmed = $dtb->getUserData($user['id']);
+        $users = $dtb->getUserCount();
     ?>
     <?= $userCount . $users; ?> <br/>
 
@@ -115,16 +117,16 @@
 } else {
     ?>
     <?= $isNotLoggedin; ?><br/>
-<?php
-$permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
-$loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
-?>
+    <?php
+        $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
+        $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
+    ?>
 
     <button id="loginButton" class="float-left submit-button"><?= $loginLink ?></button>
 
     <script type="text/javascript">
         document.getElementById("loginButton").onclick = function () {
-            location.href = "<?=$loginUrl?>";
+            location.href = "<?=htmlspecialchars($loginUrl)?>";
         };
     </script>
     <?php
@@ -133,6 +135,7 @@ $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permis
 
 ?>
 </p>
+
 <!--Random testing line-->
 <p id="testrida"><?= $randomLines ?></p>
 
