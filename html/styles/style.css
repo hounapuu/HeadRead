@@ -103,3 +103,101 @@ p{
 .main {
     margin-top: 100px; /* Add a top margin to avoid content overlay */
 }
+
+button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    overflow: hidden;
+}
+button .icon {
+    position: relative;
+    background: #1D242B;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    -webkit-transition: .2s color;
+    transition: .2s color;
+    border-radius: 2px;
+}
+button .icon .fa {
+    width: 30px;
+    -webkit-transition: .2s all;
+    transition: .2s all;
+}
+button .text {
+    position: relative;
+    width: 0;
+    height: 30px;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    background: #38B87C;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 300;
+    -webkit-transition: .2s all;
+    transition: .2s all;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+button .text span {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+button:hover .icon {
+    color: #38B87C;
+    border-radius: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+button:hover .icon:after {
+    right: -2px;
+}
+button:hover .text {
+    width: 120px;
+}
+button:hover .text span {
+    opacity: 1;
+    top: 0;
+}
+
+@-webkit-keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}

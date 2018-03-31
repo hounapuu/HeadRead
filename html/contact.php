@@ -22,21 +22,33 @@ include_once "pay.php";
             });
         });
     </script>
+    <!-- contact information -->
     <p>Palju muud kontaktinfot <br/></p>
 
-    <form method="post" action="http://localhost:3480/banklink/swedbank">
+    <!-- Payment-->
+    <p>Et me saaksime oma tööd jätkata ja arendajatele kommi osta, jäta palun meile 5 euri :)</p>
+    <form method="post" action="http://localhost:3480/banklink/swedbank" id="pangalink">
         <!-- include all values as hidden form fields -->
         <?php foreach($fields as $key => $val):?>
             <input type="hidden" name="<?php echo $key; ?>" value="<?php echo htmlspecialchars($val); ?>" />
         <?php endforeach; ?>
-            <tr><td colspan="2"><input type="submit" value="Edasi panga lehele" /></td></tr>
+            <tr><td colspan="2">
+                    <button type="submit" form="pangalink">
+                        <div class='icon'>
+                            <i class='fa fa-credit-card'></i>
+                        </div>
+                        <div class='text'>
+                            <span>Anneta</span>
+                        </div>
+                    </button>
+                </td></tr>
     </form>
-    
+    <!-- Payment result -->
     <?php
     if($_GET["payment_action"]=="success"){
         echo "Annetus edukalt tehtud. Me täname Teid!";
     } elseif ($_GET["payment_action"]=="cancel"){
-        echo "Makse jäi pooleli. Lõpetage see nüüd!";
+        echo "Makse jäi pooleli või ebaõnnestus. Proovige uuesti!";
     }else{
         echo "Te pole veel annetanud. Tehke seda praegu! (See näide töötab juhul, kui teie arvutis töötab pangalink.net rakendus)";
     }
