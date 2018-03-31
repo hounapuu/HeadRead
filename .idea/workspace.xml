@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/html/contact.php" afterPath="$PROJECT_DIR$/html/contact.php" />
       <change beforePath="$PROJECT_DIR$/html/pay.php" afterPath="$PROJECT_DIR$/html/pay.php" />
-      <change beforePath="$PROJECT_DIR$/html/user.php" afterPath="$PROJECT_DIR$/html/user.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/contact.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -75,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pay.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pay.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/pay.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="62" column="82" lean-forward="false" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
+            <state relative-caret-position="554">
+              <caret line="62" column="89" lean-forward="false" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -149,9 +147,9 @@
         <option value="$PROJECT_DIR$/html/statistics.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/html/upload.php" />
-        <option value="$PROJECT_DIR$/html/pay.php" />
         <option value="$PROJECT_DIR$/html/user.php" />
         <option value="$PROJECT_DIR$/html/contact.php" />
+        <option value="$PROJECT_DIR$/html/pay.php" />
       </list>
     </option>
   </component>
@@ -355,12 +353,12 @@
       <workItem from="1521283604943" duration="81000" />
       <workItem from="1521283707849" duration="9304000" />
       <workItem from="1522490826951" duration="10623000" />
-      <workItem from="1522520964854" duration="646000" />
+      <workItem from="1522520964854" duration="770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20654000" />
+    <option name="totallyTimeSpent" value="20778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="46" width="1296" height="1000" extended-state="6" />
@@ -663,14 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/pay.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="62" column="82" lean-forward="false" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -691,6 +681,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pay.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="62" column="89" lean-forward="false" selection-start-line="62" selection-start-column="89" selection-end-line="62" selection-end-column="89" />
           <folding />
         </state>
       </provider>
