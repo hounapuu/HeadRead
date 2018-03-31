@@ -81,10 +81,11 @@ p{
 .navigationbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    width: 100px;
 }
 
 /* Change background on mouse-over */
