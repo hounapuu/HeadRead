@@ -1,11 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
 <?php
 include_once("i18n/i18n.php");
 require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
 require_once "database-handler.php";
 session_start();
 if (!isset($_SESSION['fb_access_token'])) {
-    header("Location: http://46.101.78.158");
+    header("Location: http://headread.ninata.ga");
 }
 
 ?>
