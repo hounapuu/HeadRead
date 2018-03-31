@@ -23,6 +23,7 @@ use Facebook\FacebookRequestException;
 
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="js/googlemaps.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body onload="initMap()">
@@ -33,11 +34,12 @@ use Facebook\FacebookRequestException;
     <div class="clear"></div>
 </div>
 
-<div class="navigationbar">
-    <a href="success.php">Avaleht</a>
-    <a href="kontakt.php">Kontakt</a>
-    <a href="statistika.php">Statistika</a>
-</div>
+<div id="navbar-placeholder"></div>
+<script>
+    $(function(){
+        $("#navbar-placeholder").load("navigationbar.html");
+    });
+</script>
 
 <!-- Page name-->
 <h1><?= $testpage ?>
