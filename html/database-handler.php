@@ -111,10 +111,29 @@ Class Dtb
         mysqli_stmt_close($query); // sulgeme lause
     }
 
+    public function getImages($uid)
+    {
+        $query1 = mysqli_prepare(self::getConnection(), "SELECT headread.laadimised.path FROM headread.laadimised WHERE (headread.laadimised.k_id = ?) ");
+        mysqli_stmt_bind_param($query1, 's', $uid);
+        mysqli_stmt_execute($query1); // saadame päringu AB-le
+        $rows = [];
+        $result = mysqli_stmt_get_result($query1);
+        if ($result) {
+            while ($row = mysqli_fetch_row($result)) {
+                $rows[]=$row;
+            }
+        }
 
+
+        //mysqli_stmt_free_result($query1); // vabastame päringu vastuse
+        //mysqli_stmt_close($query1); // sulgeme lause
+        return $rows;
+    }
+    /**
     function __destruct()
     {
         mysqli_close(self::getConnection());
     }
+     */
 }
 ?>
