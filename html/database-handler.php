@@ -28,7 +28,7 @@ Class Dtb
     {
         $query = mysqli_prepare(self::getConnection(), "
         SELECT COUNT(*) FROM  headread.kasutaja");
-        $query->execute();
+        mysqli_stmt_execute($query);
         $result =  mysqli_stmt_get_result($query);
         $rows = mysqli_fetch_row($result);
 
@@ -44,10 +44,10 @@ Class Dtb
         SELECT B.lastLogin, B.ip_addr FROM  headread.kasutaja_andmed AS B
             INNER JOIN headread.kasutaja AS A ON A.k_id = B.k_id
                         WHERE A.fb_id = ?;");
-        $query->bind_param('s', $uid);
-        $query->execute();
+        mysqli_stmt_bind_param($query, 's', $uid);
+        mysqli_stmt_execute($query);
         $result =  mysqli_stmt_get_result($query);
-        $row = $result->fetch_array(MYSQLI_NUM);
+        $row = mysqli_fetch_array($result, MYSQLI_NUM);
 
         mysqli_stmt_free_result($query); // vabastame päringu vastuse
         mysqli_stmt_close($query); // sulgeme lause
@@ -57,11 +57,12 @@ Class Dtb
 
     public function isUser($uid, $ipaddr)
     {
-        $query = mysqli_prepare($this->getConnection(), "SELECT * FROM  headread.kasutaja WHERE headread.kasutaja.fb_id = ? ;");
-        $query->bind_param('s', $uid);
-        $query->execute();
-        $query->bind_result($result);
-        if ($query->fetch()) {
+        $query = mysqli_prepare(self::getConnection(), "SELECT * FROM  headread.kasutaja WHERE headread.kasutaja.fb_id = ? ;");
+        mysqli_stmt_bind_param($query, 's', $uid);
+        mysqli_stmt_execute($query);
+        $result = mysqli_stmt_get_result($query);
+        $num_rows = mysqli_num_rows($result);
+        if ($num_rows>0) {
             mysqli_stmt_free_result($query); // vabastame päringu vastuse
             mysqli_stmt_close($query); // sulgeme lause
             mysqli_free_result($result);
@@ -71,7 +72,7 @@ Class Dtb
             SET B.ip_addr = ?, B.lastLogin = CURRENT_TIMESTAMP 
             
             WHERE A.fb_id = ?;");
-            $query2->bind_param('ss', $ipaddr, $uid);
+            mysqli_stmt_bind_param($query2, 'ss', $ipaddr, $uid);
             mysqli_stmt_execute($query2); // saadame päringu AB-le
             mysqli_stmt_free_result($query2); // vabastame päringu vastuse
             mysqli_stmt_close($query2); // sulgeme lause
@@ -87,13 +88,13 @@ Class Dtb
     public function insertUser($uid, $username, $email, $ipaddr)
     {
 
-        $query = mysqli_prepare($this->getConnection(), "INSERT INTO  headread.kasutaja VALUES (NULL , ?, ? ,? ) ");
-        $query->bind_param('sss', $uid, $username, $email);
+        $query = mysqli_prepare(self::getConnection(), "INSERT INTO  headread.kasutaja VALUES (NULL , ?, ? ,? ) ");
+        mysqli_stmt_bind_param($query, 'sss', $uid, $username, $email);
         mysqli_stmt_execute($query); // saadame päringu AB-le
         mysqli_stmt_free_result($query); // vabastame päringu vastuse
         mysqli_stmt_close($query); // sulgeme lause
-        $query2 = mysqli_prepare($this->getConnection(), "INSERT INTO  headread.kasutaja_andmed VALUES (? , CURRENT_TIMESTAMP , ?) ");
-        $query2->bind_param('is', mysqli_insert_id($this->getConnection()), $ipaddr);
+        $query2 = mysqli_prepare(self::getConnection(), "INSERT INTO  headread.kasutaja_andmed VALUES (? , CURRENT_TIMESTAMP , ?) ");
+        mysqli_stmt_bind_param($query2, 'is', mysqli_insert_id(self::getConnection()), $ipaddr);
         mysqli_stmt_execute($query2); // saadame päringu AB-le
         mysqli_stmt_free_result($query2); // vabastame päringu vastuse
         mysqli_stmt_close($query2); // sulgeme lause
@@ -102,7 +103,7 @@ Class Dtb
 
     function __destruct()
     {
-        mysqli_close($this->getConnection());
+        mysqli_close(self::getConnection());
     }
 }
 ?>
