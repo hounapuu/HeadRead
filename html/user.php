@@ -27,7 +27,7 @@ if (!isset($_SESSION['fb_access_token'])) {
         });
     });
 </script>
-
+<p></br><br/><br/>Failid</p>
 <form action="upload.php" method="post" enctype="multipart/form-data">
     Profiilipildi ülesalldimine
     <input type="file" name="fileToUpload" id="fileToUpload">
