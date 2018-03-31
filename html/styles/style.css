@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 /*Language flag style*/
 div.languages-flags {
     display: block;
@@ -72,8 +76,6 @@ p{
 #navbar-placeholder {
     overflow: hidden;
     background-color: #FAEBD7;
-    position: fixed;
-    top: 0;
     width: 100%;
 }
 
