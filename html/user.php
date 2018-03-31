@@ -38,6 +38,9 @@ require_once "database-handler.php";
     Vali fail:
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Lae üles" name="submit">
+    <input type="submit" value="Kustuta" name="delete">
+
+
 </form>
 <?php
 $dtb = new Dtb();

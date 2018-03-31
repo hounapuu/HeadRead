@@ -65,11 +65,31 @@ if (isset($_POST["submit"])) {
             $dtb = new Dtb();
             $dtb->insertImage($user['id'], $target_file);
             alert("Fail " . basename($_FILES["fileToUpload"]["name"]) . " laeti üles.");
-
-
         } else {
             alert("Faili üleslaadimine ebaõnnestus.");
         }
     }
 }
+if (isset($_POST["delete"])) {
+    $fb = new Facebook\Facebook([
+        'app_id' => '159317391454778',
+        'app_secret' => '725df95714f605f633f67d52fe8994bf',
+        'default_graph_version' => 'v2.10',
+    ]);
+
+    $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
+    $user = $response->getGraphUser();
+    $dtb = new Dtb();
+    $rows = $dtb->getImages($user['id']);
+    if (count($rows) > 0) {
+        foreach ($rows as $row) {
+            $dtb->removeImage($user['id'], $row[0]);
+        }
+    } else {
+        alert("Pole midagi kustutada.");
+    }
+}
+
+
+
 ?>

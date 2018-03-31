@@ -129,6 +129,14 @@ Class Dtb
         //mysqli_stmt_close($query1); // sulgeme lause
         return $rows;
     }
+    public function removeImage($uid, $path)
+    {
+        $query1 = mysqli_prepare(self::getConnection(), "DELETE FROM headread.laadimised WHERE (headread.laadimised.k_id = ? AND headread.laadimised.path = ?) ");
+        mysqli_stmt_bind_param($query1, 'ss', $uid, $path);
+        mysqli_stmt_execute($query1); // saadame päringu AB-le
+        unlink($path);
+
+    }
     /**
     function __destruct()
     {
