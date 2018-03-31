@@ -60,8 +60,8 @@ $fields = array(
         "VK_REF"         => "1234561",
         "VK_LANG"        => "EST",
         "VK_MSG"         => "Annetus",
-        "VK_RETURN"      => "http://localhost:3480/project/5abfd309768f38312c62487d?payment_action=success",
-        "VK_CANCEL"      => "http://localhost:3480/project/5abfd309768f38312c62487d?payment_action=cancel",
+        "VK_RETURN"      => "headread.ninata.ga/contact.php?payment_action=success",
+        "VK_CANCEL"      => "headread.ninata.ga/contact.php?payment_action=cancel",
         "VK_DATETIME"    => "2018-03-31T21:28:03+0300",
         "VK_ENCODING"    => "utf-8",
 );

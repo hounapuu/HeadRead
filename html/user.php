@@ -32,7 +32,7 @@ require_once "database-handler.php";
     });
 </script>
 
-<p></br><br/><br/></p>
+<p><br/><br/></p>
 
 <form action="user.php" method="post" enctype="multipart/form-data">
     Vali fail:

@@ -10,15 +10,25 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-
 <body>
-<!-- Navbar-->
-<div id="navbar-placeholder"></div>
-<script>
-    $(function(){
-        $("#navbar-placeholder").load("navigationbar.html", function () {
-            $("#navbarContact").addClass("navbarActive");
+    <!-- Navbar-->
+    <div id="navbar-placeholder"></div>
+    <script>
+        $(function(){
+            $("#navbar-placeholder").load("navigationbar.html", function () {
+                $("#navbarContact").addClass("navbarActive");
+            });
         });
-    });
-</script>
+    </script>
+
+    get:
+    <?php
+    print_r($_GET);
+    ?>
+    <br/>
+    post:
+    <?php
+    print_r($_GET);
+    ?>
+
 </body>
