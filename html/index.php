@@ -39,7 +39,7 @@ use Facebook\FacebookRequestException;
 <script>
     $(function(){
         $("#navbar-placeholder").load("navigationbar.html", function () {
-            $("#navbarIndex").addClass("navbarActive");
+            $("#navbarHome").addClass("navbarActive");
         });
     });
 </script>
