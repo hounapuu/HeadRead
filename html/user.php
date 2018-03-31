@@ -1,6 +1,11 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
+<?php
+session_start();
+if (!isset($_SESSION['fb_access_token'])) {
+    header("Location: http://46.101.78.158");
+}
+?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
