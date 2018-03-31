@@ -17,7 +17,7 @@ Class Dtb
     public static function getConnection()
     {
         if (self::$connection===null){
-            $data =file("dbFile.txt");
+            $data =file("dbFile.txt", true);
             self::$connection =  mysqli_connect(trim($data[0]), trim($data[1]), trim($data[2]), trim($data[3]));
         }
         return self::$connection;
@@ -100,6 +100,15 @@ Class Dtb
         mysqli_stmt_close($query2); // sulgeme lause
         mkdir("uploads/" . $uid, 0777, true);
 
+    }
+
+    public function insertImage($uid, $path)
+    {
+        $query = mysqli_prepare(self::getConnection(), "INSERT INTO  headread.laadimised VALUES (NULL , ?, ?) ");
+        mysqli_stmt_bind_param($query, 'ss', $uid, $path);
+        mysqli_stmt_execute($query); // saadame päringu AB-le
+        mysqli_stmt_free_result($query); // vabastame päringu vastuse
+        mysqli_stmt_close($query); // sulgeme lause
     }
 
 

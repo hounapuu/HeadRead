@@ -21,11 +21,12 @@ if (isset($_POST["submit"])) {
     $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
     $user = $response->getGraphUser();
 
-    //$dtb = new Dtb();
+
     $target_dir = "uploads/";
     $target_file = $target_dir . $user['id'] . "/" . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     if (strpos($_FILES["fileToUpload"]["name"], '.php') !== false){
         alert("php faili ei saa üles laadida");
@@ -61,6 +62,8 @@ if (isset($_POST["submit"])) {
     } else {
         echo $_FILES["fileToUpload"]["tmp_name"];
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+            $dtb = new Dtb();
+            $dtb->insertImage($user['id'], $target_file);
             alert("Fail " . basename($_FILES["fileToUpload"]["name"]) . " laeti üles.");
 
 
