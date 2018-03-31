@@ -37,10 +37,10 @@ use Facebook\FacebookRequestException;
 <h1><?= $testpage ?>
     <!--Tooltip-->
     <span class="tooltip"><img src="img/qm.png" alt="info"/>
-    <span class="tooltiptext"><?=$tooltipText?></span>
+    <span class="tooltiptext"><?= $tooltipText ?></span>
 </span></h1>
 <!-- Facebook log in-->
-<p id="status" >
+<p id="status">
     <!--TODO: cleanup !-->
     <?php
     // Initialize the Facebook PHP SDK v5.
@@ -66,52 +66,63 @@ use Facebook\FacebookRequestException;
 
     //show if the user is logged in or not
     if ($session) {
-        //Logged in
-        ?>
-        <?=$isLoggedin;?><br/>
-        <?php
-        $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
-        $user = $response->getGraphUser();
-        ?>
-        <?= $helloMessage  . $user['name']; ?>. <br/>
-        <?php
-        $logout_url = "logout.php";
-        $dtb = new Dtb();
-        $conn = $dtb->getConnection();
-        $andmed = $dtb->getUserData($user['id']);
-        $users = $dtb->getUserCount();
-        ?>
-        <?= $userCount  . $users; ?> <br/>
-
-        <?= $loginTime  . $andmed[0]; ?>. <br/>
-        <?= $ipMessage  . $andmed[1]; ?>. <br/>
-        <form id="loginoutbutton" action="<?= $logout_url ?>" method="post">
-            <button><?=$logoutMessage?></button>
-        </form>
-        <?php
-
-    } else {
-        ?>
-        <?=$isNotLoggedin;?><br/>
-        <?php
-        $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
-        $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
-        ?>
-        <form id="loginoutbutton" action="<?= $loginUrl ?>" method="post">
-            <button><?=$loginLink?></button>
-        </form>
-        <?php
-
-    }
-
+    //Logged in
     ?>
+    <?= $isLoggedin; ?><br/>
+    <?php
+    $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
+    $user = $response->getGraphUser();
+    ?>
+    <?= $helloMessage . $user['name']; ?>. <br/>
+    <?php
+    $logout_url = "logout.php";
+    $dtb = new Dtb();
+    $conn = $dtb->getConnection();
+    $andmed = $dtb->getUserData($user['id']);
+    $users = $dtb->getUserCount();
+    ?>
+    <?= $userCount . $users; ?> <br/>
+
+    <?= $loginTime . $andmed[0]; ?>. <br/>
+    <?= $ipMessage . $andmed[1]; ?>. <br/>
+
+<button id="logoutButton" class="float-left submit-button"><?= $logoutMessage ?></button>
+
+<script type="text/javascript">
+    document.getElementById("logoutButton").onclick = function () {
+        location.href = "<?=$logout_url?>";
+    };
+</script>
+<?php
+
+} else {
+    ?>
+    <?= $isNotLoggedin; ?><br/>
+<?php
+$permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
+$loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
+?>
+
+    <button id="loginButton" class="float-left submit-button"><?= $loginLink ?></button>
+
+    <script type="text/javascript">
+        document.getElementById("loginButton").onclick = function () {
+            location.href = "<?=$loginUrl?>";
+        };
+    </script>
+    <?php
+
+}
+
+?>
 </p>
 <!--Random testing line-->
-<p id="testrida" ><?= $randomLines ?></p>
+<p id="testrida"><?= $randomLines ?></p>
 
 <p id="map"></p>
-<script defer = "defer"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&amp;callback=initMap" type="text/javascript">
+<script defer="defer"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&amp;callback=initMap"
+        type="text/javascript">
 </script>
 </body>
 
