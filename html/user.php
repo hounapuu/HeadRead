@@ -14,7 +14,7 @@ if (!isset($_SESSION['fb_access_token'])) {
 
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
+    <script src="upload.php" type="text/php"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@ if (!isset($_SESSION['fb_access_token'])) {
 
 <p></br><br/><br/></p>
 
-<form action="upload.php" method="post" enctype="multipart/form-data">
+<form action="user.php" method="post" enctype="multipart/form-data">
     Vali fail:
     <input type="file" name="fileToUpload" id="fileToUpload">
     <input type="submit" value="Lae üles" name="submit">
