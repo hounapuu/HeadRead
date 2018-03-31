@@ -17,9 +17,9 @@
 <div id="navbar-placeholder"></div>
 <script>
     $(function(){
-        $("#navbar-placeholder").load("navigationbar.html"), function () {
+        $("#navbar-placeholder").load("navigationbar.html", function () {
             $("#navbarStatistics").addClass("navbarActive");
-        });;
+        });
     });
 </script>
 
