@@ -33,7 +33,7 @@ include_once "pay.php";
             <input type="hidden" name="<?php echo $key; ?>" value="<?php echo htmlspecialchars($val); ?>" />
         <?php endforeach; ?>
             <tr><td colspan="2">
-                    <button type="submit" form="pangalink">
+                    <button type="submit" class='centerMe' form="pangalink">
                         <div class='icon'>
                             <i class='fa fa-credit-card'></i>
                         </div>

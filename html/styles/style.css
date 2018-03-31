@@ -103,8 +103,14 @@ p{
 .main {
     margin-top: 100px; /* Add a top margin to avoid content overlay */
 }
-
-button {
+#pangalink .centerMe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#pangalink button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,41 +120,41 @@ button {
     outline: 0;
     overflow: hidden;
 }
-button .icon {
+#pangalink button .icon {
     position: relative;
-    background: #1D242B;
+    background: #1d242b;
     line-height: 30px;
     width: 30px;
     height: 30px;
     text-align: center;
     color: #fff;
     font-size: 18px;
-    -webkit-transition: .2s color;
-    transition: .2s color;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
     border-radius: 2px;
 }
-button .icon .fa {
+#pangalink button .icon .fa {
     width: 30px;
-    -webkit-transition: .2s all;
-    transition: .2s all;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
 }
-button .text {
+#pangalink button .text {
     position: relative;
     width: 0;
     height: 30px;
     overflow: hidden;
     font-family: "Roboto", sans-serif;
-    background: #38B87C;
+    background: #38b87c;
     text-align: center;
     line-height: 30px;
     color: #fff;
     font-weight: 300;
-    -webkit-transition: .2s all;
-    transition: .2s all;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-button .text span {
+#pangalink button .text span {
     width: 100%;
     opacity: 0;
     position: absolute;
@@ -156,22 +162,22 @@ button .text span {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    -webkit-transition: .3s all;
-    transition: .3s all;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
 }
-button:hover .icon {
-    color: #38B87C;
+#pangalink button:hover .icon {
+    color: #38b87c;
     border-radius: 0;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
 }
-button:hover .icon:after {
+#pangalink button:hover .icon:after {
     right: -2px;
 }
-button:hover .text {
+#pangalink button:hover .text {
     width: 120px;
 }
-button:hover .text span {
+#pangalink button:hover .text span {
     opacity: 1;
     top: 0;
 }
