@@ -27,6 +27,7 @@ include_once "pay.php";
 
     <!-- Payment-->
     <p>Et me saaksime oma tööd jätkata ja arendajatele kommi osta, jäta palun meile 5 euri :)</p>
+
     <form method="post" action="http://localhost:3480/banklink/swedbank" id="pangalink">
         <!-- include all values as hidden form fields -->
         <?php foreach($fields as $key => $val):?>
@@ -44,6 +45,7 @@ include_once "pay.php";
                 </td></tr>
     </form>
     <!-- Payment result -->
+    
     <?php
     if($_GET["payment_action"]=="success"){
         echo "Annetus edukalt tehtud. Me täname Teid!";
