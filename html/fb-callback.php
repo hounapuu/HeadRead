@@ -91,6 +91,19 @@ if (mysqli_ping($conn)) {
     $ipaddr =  $_SERVER['REMOTE_ADDR'];
     if (!($dtb->isUser($user['id'], $ipaddr))) {
         $dtb->insertUser($user['id'], $user['name'], $user['email'], $ipaddr);
+        // first login, send signup email
+        if (filter_var($user['email'], FILTER_VALIDATE_EMAIL)) {
+            $to = $user['email'];
+            $subject = "Paremad Read - uus kasutaja";
+            $body = "Tere tulemast Paremad Read kasutajate sekka!";
+            $headers = "From: Paremad Read". 
+            "X-Mailer: php";
+            if (!mail($to, $subject, $body, $headers)) {
+                error_log(print_r("Message delivery failed to " . $to, TRUE), 3, '/var/tmp/sendmail_errors.log');
+            }
+        }
+        
+            
     }
 
 
