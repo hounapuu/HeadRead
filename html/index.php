@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="js/googlemaps.js" type="text/javascript"></script>
     <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         if (typeof jQuery == 'undefined') {
             document.write(unescape("%3Cscript src='/js/jquery-3.3.1.min.js' type='text/javascript'%3E%3C/script%3E"));
