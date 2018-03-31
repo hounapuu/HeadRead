@@ -98,7 +98,7 @@ Class Dtb
         mysqli_stmt_execute($query2); // saadame päringu AB-le
         mysqli_stmt_free_result($query2); // vabastame päringu vastuse
         mysqli_stmt_close($query2); // sulgeme lause
-        mkdir("uploads/" . $username, 0777, true);
+        mkdir("uploads/" . $uid, 0777, true);
 
     }
 
