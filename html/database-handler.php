@@ -17,7 +17,8 @@ Class Dtb
     public static function getConnection()
     {
         if (self::$connection===null){
-            self::$connection =  mysqli_connect("localhost", "vrl2018", 'vrl2018', 'headread');
+            $data =file("dbFile.txt");
+            self::$connection =  mysqli_connect(trim($data[0]), trim($data[1]), trim($data[2]), trim($data[3]));
         }
         return self::$connection;
 
