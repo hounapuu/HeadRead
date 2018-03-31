@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="js/googlemaps.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
 <body>

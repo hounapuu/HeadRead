@@ -9,14 +9,14 @@
 
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="js/googlemaps.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
 <div id="navbar-placeholder"></div>
 <script>
-    $(function(){
-        $("#navbar-placeholder").load("navigationbar.html");
+    $.get("navigationbar.html", function(data){
+        $("#navbar-placeholder").replaceWith(data);
     });
 </script>
-
 </body>

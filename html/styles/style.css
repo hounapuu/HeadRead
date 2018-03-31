@@ -69,7 +69,7 @@ p{
 }
 
 /* The navigation bar */
-.navigationbar {
+#navbar-placeholder {
     overflow: hidden;
     background-color: #FAEBD7;
     position: fixed;
@@ -78,7 +78,7 @@ p{
 }
 
 /* Links inside the navbar */
-.navigationbar a {
+#navbar-placeholder a {
     float: left;
     display: block;
     color: #000000;
@@ -89,7 +89,7 @@ p{
 }
 
 /* Change background on mouse-over */
-.navigationbar a:hover {
+#navbar-placeholder a:hover {
     background: #DEB887;
     color: black;
 }
