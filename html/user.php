@@ -5,6 +5,7 @@ session_start();
 if (!isset($_SESSION['fb_access_token'])) {
     header("Location: http://46.101.78.158");
 }
+include_once 'upload.php';
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
@@ -14,7 +15,6 @@ if (!isset($_SESSION['fb_access_token'])) {
 
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="upload.php" type="text/php"></script>
 </head>
 
 <body>
