@@ -94,8 +94,8 @@ p{
     color: black;
 }
 
-#navbar-placeholder.navbarActive{
-    color: aqua;
+#navbar-placeholder .navbarActive{
+    background: aqua;
 }
 /* Main content */
 .main {
