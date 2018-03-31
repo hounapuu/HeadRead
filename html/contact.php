@@ -8,7 +8,7 @@ include_once "pay.php";
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>Kontakt</title>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
