@@ -96,9 +96,8 @@ if (mysqli_ping($conn)) {
             $to = $user['email'];
             $subject = "Paremad Read - uus kasutaja";
             $body = "Tere tulemast Paremad Read kasutajate sekka!";
-            $headers = "From: paremad@ninata.ga". 
-            "X-Mailer: php";
-            if (!mail($to, $subject, $body, $headers"-f paremad@ninata.ga")) {
+            $headers = "From: paremad@ninata.ga";
+            if (!mail($to, $subject, $body, $headers)) {
                 error_log(print_r("Message delivery failed to " . $to, TRUE), 3, '/var/tmp/sendmail_errors.log');
             }
         }
