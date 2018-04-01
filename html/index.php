@@ -125,7 +125,7 @@
 
     <script type="text/javascript">
         document.getElementById("loginButton").onclick = function () {
-            location.href = "<?=htmlspecialchars($loginUrl)?>";
+            location.href = "<?=$loginUrl?>";
         };
     </script>
     <?php
