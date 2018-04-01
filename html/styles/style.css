@@ -145,7 +145,7 @@ p{
     height: 30px;
     overflow: hidden;
     font-family: "Roboto", sans-serif;
-    background: #38b87c;
+    background: #2a895c;
     text-align: center;
     line-height: 30px;
     color: #fff;
@@ -167,7 +167,7 @@ p{
     transition: 0.3s all;
 }
 #pangalink button:hover .icon {
-    color: #38b87c;
+    color: #2a895c;
     border-radius: 0;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;

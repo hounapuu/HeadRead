@@ -43,7 +43,7 @@
                 <td colspan="2">
                     <button type="submit" class='centerMe' form="pangalink">
                         <div class='icon'>
-                            <i class='fa fa-credit-card'></i>
+                            <em class='fa fa-credit-card'></em>
                         </div>
                         <div class='text'>
                             <span>Anneta</span>
@@ -55,7 +55,7 @@
     <!-- Payment result -->
     
     <?php
-        if($_GET["payment_action"]=="success") {
+        if ($_GET["payment_action"]=="success") {
             echo "Annetus edukalt tehtud. Me täname Teid!";
         } elseif ($_GET["payment_action"]=="cancel") {
             echo "Makse jäi pooleli või ebaõnnestus. Proovige uuesti!";
