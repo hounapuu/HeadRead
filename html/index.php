@@ -31,12 +31,7 @@
 
 <body onload="initMap()">
 
-<!--Language selection flags-->
-<div class="languages-flags">
-    <a href="index.php?language=est"><img src="img/est.png" alt="eesti keeles"/></a>
-    <a href="index.php?language=en"><img src="img/eng.png" alt="in english"/></a>
-    <div class="clear"></div>
-</div>
+
 
 <!-- Navbar-->
 <div id="navbar-placeholder"></div>
@@ -47,6 +42,13 @@
         });
     });
 </script>
+
+<!--Language selection flags-->
+<div class="languages-flags">
+    <a href="index.php?language=est"><img src="img/est.png" alt="eesti keeles"/></a>
+    <a href="index.php?language=en"><img src="img/eng.png" alt="in english"/></a>
+    <div class="clear"></div>
+</div>
 
 <!-- Page name-->
 <h1><?= $testpage ?>
@@ -125,7 +127,7 @@
 
     <script type="text/javascript">
         document.getElementById("loginButton").onclick = function () {
-            location.href = "<?=htmlspecialchars($loginUrl)?>";
+            location.href = "<?=$loginUrl?>";
         };
     </script>
     <?php

@@ -45,6 +45,7 @@
     <input type="submit" value="Kustuta" name="delete">
 
 
+
 </form>
 <?php
     $dtb = new Dtb();
@@ -58,9 +59,8 @@
     $user = $response->getGraphUser();
     $rows = $dtb->getImages($user['id']);
     if (count($rows) > 0) {
-        foreach ($rows as $row) {
-            echo     "<img src='".$row[0]."''/>";;
-        }
+        echo("<img src='" . $rows[0][0] . "'/>");
+
     }
 ?>
 </body>
