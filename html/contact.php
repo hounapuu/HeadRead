@@ -39,18 +39,20 @@
         <?php foreach($fields as $key => $val):?>
             <input type="hidden" name="<?php echo $key; ?>" value="<?php echo htmlspecialchars($val); ?>" />
         <?php endforeach; ?>
+        <table>
             <tr>
                 <td colspan="2">
                     <button type="submit" class='centerMe' form="pangalink">
-                        <div class='icon'>
+                        <span class='icon'>
                             <em class='fa fa-credit-card'></em>
-                        </div>
-                        <div class='text'>
+                        </span>
+                        <span class='text'>
                             <span>Anneta</span>
-                        </div>
+                        </span>
                     </button>
                 </td>
             </tr>
+    </table>
     </form>
     <!-- Payment result -->
     
