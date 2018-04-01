@@ -67,7 +67,7 @@
         } elseif ($_GET["payment_action"]=="cancel") {
             echo "Makse jäi pooleli või ebaõnnestus. Proovige uuesti!";
         } else {
-            echo "Te pole veel annetanud. Tehke seda praegu! (See näide töötab juhul, kui teie arvutis töötab pangalink.net rakendus)";
+            echo "Annetage kohe! (See näide töötab juhul, kui teie arvutis töötab pangalink.net rakendus)";
         }
     ?>
 
