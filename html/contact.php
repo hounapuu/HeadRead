@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-        if (typeof jQuery == 'undefined') {
+        if (typeof jQuery === 'undefined') {
             document.write(unescape("%3Cscript src='/js/jquery-3.3.1.min.js' type='text/javascript'%3E%3C/script%3E"));
         }
     </script>
@@ -39,24 +39,29 @@
         <?php foreach($fields as $key => $val):?>
             <input type="hidden" name="<?php echo $key; ?>" value="<?php echo htmlspecialchars($val); ?>" />
         <?php endforeach; ?>
-        <table>
+        <table class='centerMe'>
             <tr>
-                <td colspan="2">
-                    <button type="submit" class='centerMe' form="pangalink">
-                        <span class='icon'>
+                <td>
+                    <button type="submit" form="pangalink">
                             <em class='fa fa-credit-card'></em>
-                        </span>
-                        <span class='text'>
                             <span>Anneta</span>
-                        </span>
                     </button>
                 </td>
-            </tr>
-    </table>
+            </tr></table>
     </form>
     <!-- Payment result -->
-    
+
     <?php
+    /**
+     * <button type="submit" class='centerMe' form="pangalink">
+    <div class='icon'>
+    <em class='fa fa-credit-card'></em>
+    </div>
+    <div class='text'>
+    <span>Anneta</span>
+    </div>
+    </button>
+     */
         if ($_GET["payment_action"]=="success") {
             echo "Annetus edukalt tehtud. Me täname Teid!";
         } elseif ($_GET["payment_action"]=="cancel") {
