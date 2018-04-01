@@ -1,4 +1,4 @@
-<!DOCTYPE html">
+<!DOCTYPE html>
 
 <!-- Connects language files to this file-->
 <?php include("i18n/i18n.php"); ?>
