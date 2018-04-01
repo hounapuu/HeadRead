@@ -5,7 +5,7 @@
     ini_set('display_errors',1);
     session_start();
     if (!isset($_SESSION['fb_access_token'])) {
-        header("Location: http://headread.ninata.ga");
+        header("Location: http://46.101.78.158/");
     }
     include_once 'upload.php';
     require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';

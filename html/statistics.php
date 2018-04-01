@@ -6,7 +6,7 @@
     require_once "database-handler.php";
     session_start();
     if (!isset($_SESSION['fb_access_token'])) {
-        header("Location: http://headread.ninata.ga");
+        header("Location: http://46.101.78.158/");
     }
 ?>
 
