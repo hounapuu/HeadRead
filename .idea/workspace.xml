@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/html/tooltipText.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/html/i18n/en.php" afterPath="$PROJECT_DIR$/html/i18n/en.php" />
-      <change beforePath="$PROJECT_DIR$/html/i18n/est.php" afterPath="$PROJECT_DIR$/html/i18n/est.php" />
       <change beforePath="$PROJECT_DIR$/html/index.php" afterPath="$PROJECT_DIR$/html/index.php" />
+      <change beforePath="$PROJECT_DIR$/html/tooltipText.txt" afterPath="$PROJECT_DIR$/html/tooltipText.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,18 +18,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="72" column="47" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+            <state relative-caret-position="391">
+              <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tooltipText.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/tooltipText.txt">
+      <file leaf-file-name="tooltipText.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/tooltipText.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -160,6 +158,7 @@
         <option value="$PROJECT_DIR$/html/i18n/est.php" />
         <option value="$PROJECT_DIR$/html/tooltipText.txt" />
         <option value="$PROJECT_DIR$/html/i18n/en.php" />
+        <option value="$PROJECT_DIR$/html/tooltipText.php" />
         <option value="$PROJECT_DIR$/html/index.php" />
       </list>
     </option>
@@ -370,12 +369,12 @@
       <workItem from="1522520964854" duration="5450000" />
       <workItem from="1522603031506" duration="603000" />
       <workItem from="1522687137007" duration="76000" />
-      <workItem from="1523642824665" duration="1352000" />
+      <workItem from="1523642824665" duration="3212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27489000" />
+    <option name="totallyTimeSpent" value="29349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="10" width="1296" height="1000" extended-state="6" />
@@ -765,14 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/tooltipText.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/i18n/en.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -789,10 +780,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/tooltipText.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="72" column="47" lean-forward="false" selection-start-line="72" selection-start-column="47" selection-end-line="72" selection-end-column="47" />
+        <state relative-caret-position="391">
+          <caret line="63" column="31" lean-forward="true" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
           <folding />
         </state>
       </provider>
