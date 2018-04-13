@@ -52,7 +52,7 @@
                     xmlDoc = $.parseXML(this.responseText);
                     $xml = $(xmlDoc);
                     document.getElementById("tooltip").innerHTML =
-                        $xml.find("tooltip");
+                        $xml.find("tooltip").text();
                 }
             };
             xhttp.open("GET", "tooltipText.php?request=<request>tooltip</request>", true);
