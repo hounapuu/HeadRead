@@ -41,8 +41,21 @@
             $("#navbarHome").addClass("navbarActive");
         });
     });
+    var firstLoad=true;
     function mouseOver(){
-        console.log("Rat over")
+        if (firstLoad){
+            firstLoad=false;
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("tooltip").innerHTML =
+                        this.responseText;
+                }
+            };
+            xhttp.open("GET", "tooltipText.txt", true);
+            xhttp.send();
+
+        }
     }
 </script>
 
@@ -57,7 +70,7 @@
 <h1><?= $testpage ?>
 <!--Tooltip-->
     <span class="tooltip" onmouseover="mouseOver()"><img src="img/qm.png" alt="info"/>
-        <span class="tooltiptext"><?= $tooltipText ?>
+        <span class="tooltiptext" id="tooltip">
         </span>
     </span>
 </h1>
