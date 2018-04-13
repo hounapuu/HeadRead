@@ -41,6 +41,9 @@
             $("#navbarHome").addClass("navbarActive");
         });
     });
+    function mouseOver(){
+        console.log("Rat over")
+    }
 </script>
 
 <!--Language selection flags-->
@@ -53,9 +56,9 @@
 <!-- Page name-->
 <h1><?= $testpage ?>
 <!--Tooltip-->
-    <span class="tooltip"><img src="img/qm.png" alt="info"/>
-    <span class="tooltiptext"><?= $tooltipText ?>
-    </span>
+    <span class="tooltip" onmouseover="mouseOver()"><img src="img/qm.png" alt="info"/>
+        <span class="tooltiptext"><?= $tooltipText ?>
+        </span>
     </span>
 </h1>
 
