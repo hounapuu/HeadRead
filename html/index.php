@@ -8,7 +8,7 @@
 <?php
     include_once("i18n/i18n.php");
     require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
-    require_once "utils/database-handler.php";
+    require_once "database-handler.php";
 
     if (!session_id()) { //Check if facebook session is up, if not then start a new one
         session_start();
