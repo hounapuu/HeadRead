@@ -57,7 +57,7 @@
     </p>
 <br/>
     <!-- datapush -->
-    <h2>Viimased sisselogijad:</h2>
+    <h2>Viimased Facebookiga sisselogijad:</h2>
     <pre id="loggedInUsers"></pre>
 
 
