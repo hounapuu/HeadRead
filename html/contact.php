@@ -21,7 +21,7 @@
     </script>
 </head>
 
-<body itemscope itemtype="http://schema.org/ContactPage">>
+<body itemscope itemtype="http://schema.org/ContactPage">
     <!-- Navbar-->
     <div id="navbar-placeholder">
         <?php include("navigationbar.html"); ?> 

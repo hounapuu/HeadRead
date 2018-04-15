@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="et">
 
 <!-- Connects language files to this file-->
 <?php
@@ -16,9 +17,11 @@
 
 
 <head>
+	<title>Paremad Read - Avaleht</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title><?= $pageTitileLogIn ?></title>
-
+        <meta name="description" content="Paremad Read raamatuotsing">
+        <meta name="keywords" content="Raamatud, E-raamatud, Kasutatud raamatud, Raamatute müük">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="js/googlemaps.js" type="text/javascript"></script>
     <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
@@ -30,24 +33,26 @@
     </script>
 </head>
 
-<body onload="initMap()">
+    <body onload="initMap()" itemscope itemtype="http://schema.org/WebPage">
 
 
 <!-- Navbar-->
-<div id="navbar-placeholder"></div>
+        <div id="navbar-placeholder">
+            <?php include("navigationbar.html"); ?> 
+        </div>
 <script type="text/javascript" src="js/indexJS.js"></script>
 
 <!--Language selection flags-->
 <div class="languages-flags">
-    <a href="index.php?language=est"><img src="img/est.png" alt="eesti keeles"/></a>
-    <a href="index.php?language=en"><img src="img/eng.png" alt="in english"/></a>
+            <a href="index.php?language=est" rel="nofollow" itemprop="url"><img src="img/est.png" itemprop="image" alt="eesti keeles"/></a>
+            <a href="index.php?language=en" rel="nofollow" itemprop="url"><img src="img/eng.png" itemprop="image" alt="in english"/></a>
     <div class="clear"></div>
 </div>
 
 <!-- Page name-->
 <h1><?= $testpage ?>
     <!--Tooltip-->
-    <span class="tooltip" onmouseover="mouseOver()" onfocus="mouseOver()"><img src="img/qm.png" alt="info"/>
+    <span class="tooltip" onmouseover="mouseOver()" onfocus="mouseOver()"><img src="img/qm.png" itemprop="image" alt="info"/>
         <span class="tooltiptext" id="tooltip">
         </span>
     </span>
@@ -100,7 +105,7 @@
         <?= $loginTime . $andmed[0]; ?>. <br/>
         <?= $ipMessage . $andmed[1]; ?>. <br/>
 
-            <button id="logoutButton" class="float-left submit-button"><?= $logoutMessage ?></button>
+        <button id="logoutButton" class="float-left submit-button" rel="nofollow" itemprop="url"><?= $logoutMessage ?></button>
 
             <script type="text/javascript">
                 document.getElementById("logoutButton").onclick = function () {
@@ -117,7 +122,13 @@
             $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
         ?>
 
-            <button id="loginButton" class="float-left submit-button"><?= $loginLink ?></button>
+        <button id="loginButton" class="float-left submit-button" rel="nofollow" itemprop="url"><?= $loginLink ?></button>
+        <br>
+        <form method="post" action="/smartid.php">
+            <label for="idNumber">Isikukood</label>
+            <input type="text" id="idNumber" placeholder="Sisesta isikukood" name="idNumber">
+            <input type="submit" rel="nofollow" itemprop="url">
+        </form>
 
             <script type="text/javascript">
                 document.getElementById("loginButton").onclick = function () {
@@ -129,16 +140,16 @@
         }
 
     ?>
-</p>
 
-<!--Random testing line-->
-<p id="testrida"><?= $randomLines ?></p>
-
-<p id="map"></p>
+        <!-- Our location -->
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <span itemprop="name">Paremad Read</span>
+            <p id="map" itemprop="hasMap"></p>
 <script defer="defer"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&amp;callback=initMap"
         type="text/javascript">
 </script>
+        </div>
 </body>
 
 </html>
