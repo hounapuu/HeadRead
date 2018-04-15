@@ -93,11 +93,10 @@ if (mysqli_ping($conn)) {
     $ipaddr =  $_SERVER["REMOTE_ADDR"];
 
     //faili kirjutamine
-    $file="loggedInUsers.txt";
-    $data=$user['name']."\n";
-    $fh = fopen($file, 'a') or die("can't open file");
-    fwrite($fh,$data);
-    fclose($fh);
+    $file_data =$user['name']."\n";
+    $file_data .= file_get_contents("loggedInUsers.txt");
+    file_put_contents("loggedInUsers.txt", $file_data);
+
     if (!($dtb->isUser($user["id"], $ipaddr))) {
         $dtb->insertUser($user["id"], $user["name"], $user["email"], $ipaddr);
 
