@@ -21,7 +21,7 @@ function getContent(timestamp)
                 // put result data into "obj"
                 var obj = jQuery.parseJSON(data);
                 // put the data_from_file into #response
-                $('#response').html(obj.data_from_file);
+                $('#loggedInUsers').html(obj.data_from_file);
                 // call the function again, this time with the timestamp we just got from server.php
                 getContent(obj.timestamp);
             }
