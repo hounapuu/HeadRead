@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/navigationbar.html" />
       <change beforePath="$PROJECT_DIR$/html/index.php" afterPath="$PROJECT_DIR$/html/index.php" />
-      <change beforePath="$PROJECT_DIR$/html/templates/contact.php" afterPath="$PROJECT_DIR$/html/templates/contact.php" />
-      <change beforePath="$PROJECT_DIR$/html/templates/statistics.php" afterPath="$PROJECT_DIR$/html/templates/statistics.php" />
-      <change beforePath="$PROJECT_DIR$/html/templates/user.php" afterPath="$PROJECT_DIR$/html/templates/user.php" />
+      <change beforePath="$PROJECT_DIR$/html/templates/contact.php" afterPath="$PROJECT_DIR$/html/contact.php" />
+      <change beforePath="$PROJECT_DIR$/html/templates/navigationbar.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/html/templates/statistics.php" afterPath="$PROJECT_DIR$/html/statistics.php" />
+      <change beforePath="$PROJECT_DIR$/html/templates/user.php" afterPath="$PROJECT_DIR$/html/user.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,31 +18,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+            <state relative-caret-position="288">
+              <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="contact.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/templates/contact.php">
+        <entry file="file://$PROJECT_DIR$/html/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="288">
+              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="navigationbar.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/templates/navigationbar.html">
+        <entry file="file://$PROJECT_DIR$/html/navigationbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -66,6 +68,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="fb-callback.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/utils/fb-callback.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1921">
+              <caret line="113" column="2" lean-forward="false" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HeadRead.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/HeadRead.iml">
           <provider selected="true" editor-type-id="text-editor">
@@ -77,51 +89,31 @@
         </entry>
       </file>
       <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/templates/statistics.php">
+        <entry file="file://$PROJECT_DIR$/html/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="322">
+              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/templates/user.php">
+      <file leaf-file-name="success.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/success.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state relative-caret-position="306">
+              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/styles/style.css">
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="834">
-              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="271">
+              <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database-handler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/utils/database-handler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="18" />
-              <folding>
-                <marker date="1523808757899" expanded="true" signature="580:619" ph="SELECT COUNT... kasutaja" />
-                <marker date="1523808757899" expanded="true" signature="1055:1227" ph="SELECT B.las... kasutaja_andmed" />
-                <marker date="1523808757899" expanded="true" signature="1719:1785" ph="SELECT * FRO... kasutaja" />
-                <marker date="1523808757899" expanded="true" signature="2248:2456" ph="UPDATE headread.kasutaja_andmed... " />
-                <marker date="1523808757899" expanded="true" signature="3110:3165" ph="INSERT INTO kasutaja" />
-                <marker date="1523808757899" expanded="true" signature="3483:3555" ph="INSERT INTO kasutaja_andmed" />
-                <marker date="1523808757899" expanded="true" signature="4005:4058" ph="INSERT INTO laadimised" />
-                <marker date="1523808757899" expanded="true" signature="4412:4505" ph="SELECT headr... laadimised" />
-                <marker date="1523808757899" expanded="true" signature="5094:5195" ph="DELETE FROM headread.laadimised... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +131,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>.php</find>
+      <find>php</find>
+      <find>templ</find>
+      <find>tem</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,10 +155,7 @@
         <option value="$PROJECT_DIR$/html/success.php" />
         <option value="$PROJECT_DIR$/html/upload.php" />
         <option value="$PROJECT_DIR$/html/pay.php" />
-        <option value="$PROJECT_DIR$/html/contact.php" />
         <option value="$PROJECT_DIR$/html/styles/style.css" />
-        <option value="$PROJECT_DIR$/html/statistics.php" />
-        <option value="$PROJECT_DIR$/html/user.php" />
         <option value="$PROJECT_DIR$/html/fb-callback.php" />
         <option value="$PROJECT_DIR$/html/i18n/est.php" />
         <option value="$PROJECT_DIR$/html/tooltipText.txt" />
@@ -171,13 +163,16 @@
         <option value="$PROJECT_DIR$/html/tooltipText.php" />
         <option value="$PROJECT_DIR$/html/indeksJS.js" />
         <option value="$PROJECT_DIR$/html/pages/user.php" />
-        <option value="$PROJECT_DIR$/html/navigationbar.html" />
-        <option value="$PROJECT_DIR$/html/templates/navigationbar.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/html/templates/statistics.php" />
         <option value="$PROJECT_DIR$/html/templates/user.php" />
         <option value="$PROJECT_DIR$/html/templates/contact.php" />
+        <option value="$PROJECT_DIR$/html/templates/navigationbar.html" />
+        <option value="$PROJECT_DIR$/html/navigationbar.html" />
+        <option value="$PROJECT_DIR$/html/contact.php" />
         <option value="$PROJECT_DIR$/html/index.php" />
+        <option value="$PROJECT_DIR$/html/statistics.php" />
+        <option value="$PROJECT_DIR$/html/user.php" />
       </list>
     </option>
   </component>
@@ -237,12 +232,6 @@
               <item name="HeadRead" type="b2602c69:ProjectViewProjectNode" />
               <item name="HeadRead" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HeadRead" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HeadRead" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -261,8 +250,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\helen\Documents\HeadRead\html\templates" />
       <recent name="C:\Users\helen\Documents\HeadRead\html" />
+      <recent name="C:\Users\helen\Documents\HeadRead\html\templates" />
       <recent name="C:\Users\helen\Documents\HeadRead\html\utils" />
       <recent name="C:\Users\helen\Documents\HeadRead\html\pages" />
       <recent name="C:\Users\helen\Documents\HeadRead\html\js" />
@@ -383,12 +372,12 @@
       <workItem from="1522603031506" duration="603000" />
       <workItem from="1522687137007" duration="76000" />
       <workItem from="1523642824665" duration="4427000" />
-      <workItem from="1523808305978" duration="2028000" />
+      <workItem from="1523808305978" duration="2353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32592000" />
+    <option name="totallyTimeSpent" value="32917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -441,7 +430,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/templates/statistics.php">
+    <entry file="file://$PROJECT_DIR$/html/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
@@ -449,7 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/templates/contact.php">
+    <entry file="file://$PROJECT_DIR$/html/contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="20" selection-end-column="11" />
@@ -457,7 +446,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/templates/navigationbar.html">
+    <entry file="file://$PROJECT_DIR$/html/navigationbar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="17" />
@@ -465,7 +454,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/templates/user.php">
+    <entry file="file://$PROJECT_DIR$/html/user.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
@@ -663,22 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/utils/fb-callback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="113" column="2" lean-forward="false" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/utils/tooltipText.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -737,14 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/templates/navigationbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -769,34 +734,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/templates/statistics.php">
+    <entry file="file://$PROJECT_DIR$/html/utils/fb-callback.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="1921">
+          <caret line="113" column="2" lean-forward="false" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/templates/user.php">
+    <entry file="file://$PROJECT_DIR$/html/navigationbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="17">
+          <caret line="1" column="54" lean-forward="false" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/templates/contact.php">
+    <entry file="file://$PROJECT_DIR$/html/contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="288">
+          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        <state relative-caret-position="288">
+          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
           <folding />
         </state>
       </provider>
