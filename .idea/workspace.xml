@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/js/LoggedInUserclient.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/loggedInUserServer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/loggedInUsers.txt" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/html/index.php" afterPath="$PROJECT_DIR$/html/index.php" />
+      <change beforePath="$PROJECT_DIR$/html/js/indexJS.js" afterPath="$PROJECT_DIR$/html/js/indexJS.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,18 +21,90 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            <state relative-caret-position="577">
+              <caret line="56" column="16" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoggedInUserclient.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/LoggedInUserclient.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loggedInUserServer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/loggedInUserServer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <folding>
+                <element signature="e#10#778#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loggedInUsers.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/loggedInUsers.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database-handler.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/database-handler.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1688">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1523811405875" expanded="true" signature="580:619" ph="SELECT COUNT... kasutaja" />
+                <marker date="1523811405875" expanded="true" signature="1055:1227" ph="SELECT B.las... kasutaja_andmed" />
+                <marker date="1523811405875" expanded="true" signature="1719:1785" ph="SELECT * FRO... kasutaja" />
+                <marker date="1523811405875" expanded="true" signature="2248:2456" ph="UPDATE headread.kasutaja_andmed... " />
+                <marker date="1523811405875" expanded="true" signature="3110:3165" ph="INSERT INTO kasutaja" />
+                <marker date="1523811405875" expanded="true" signature="3483:3555" ph="INSERT INTO kasutaja_andmed" />
+                <marker date="1523811405875" expanded="true" signature="4005:4058" ph="INSERT INTO laadimised" />
+                <marker date="1523811405875" expanded="true" signature="4412:4505" ph="SELECT headr... laadimised" />
+                <marker date="1523811405875" expanded="true" signature="5094:5195" ph="DELETE FROM headread.laadimised... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common_functions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/common_functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexJS.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html/js/indexJS.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -98,8 +175,11 @@
         <option value="$PROJECT_DIR$/html/i18n/en.php" />
         <option value="$PROJECT_DIR$/html/tooltipText.php" />
         <option value="$PROJECT_DIR$/html/indeksJS.js" />
-        <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/html/js/indexJS.js" />
+        <option value="$PROJECT_DIR$/html/js/LoggedInUserclient.js" />
+        <option value="$PROJECT_DIR$/html/index.php" />
+        <option value="$PROJECT_DIR$/html/loggedInUserServer.php" />
       </list>
     </option>
   </component>
@@ -114,8 +194,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="413" />
-    <option name="y" value="-19" />
+    <option name="x" value="406" />
+    <option name="y" value="-8" />
     <option name="width" value="933" />
     <option name="height" value="946" />
   </component>
@@ -153,6 +233,12 @@
               <item name="HeadRead" type="b2602c69:ProjectViewProjectNode" />
               <item name="HeadRead" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HeadRead" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HeadRead" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HeadRead" type="b2602c69:ProjectViewProjectNode" />
@@ -302,7 +388,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31412000" />
+    <option name="totallyTimeSpent" value="34124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -347,40 +433,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html/i18n/i18n.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/navigationbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/pay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="58" column="36" lean-forward="true" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -388,6 +445,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1853">
           <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -395,6 +453,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="114" column="2" lean-forward="true" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -456,6 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
           <caret line="100" column="7" lean-forward="true" selection-start-line="100" selection-start-column="7" selection-end-line="100" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -543,14 +603,6 @@
     <entry file="file://$PROJECT_DIR$/html/js/testscript.js" />
     <entry file="file://$PROJECT_DIR$/html/style.css" />
     <entry file="file://$PROJECT_DIR$/html/styles/navbarStyle.css" />
-    <entry file="file://$PROJECT_DIR$/html/database-handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/kontakt.php" />
     <entry file="file://$PROJECT_DIR$/html/statistika.php" />
     <entry file="file://$PROJECT_DIR$/html/upload.php">
@@ -610,6 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1921">
           <caret line="113" column="2" lean-forward="false" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -617,6 +670,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1972">
           <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -624,6 +678,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -659,21 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
           <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/indexJS.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -683,6 +723,74 @@
         <state relative-caret-position="34">
           <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/common_functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/database-handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1688">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1523811405875" expanded="true" signature="580:619" ph="SELECT COUNT... kasutaja" />
+            <marker date="1523811405875" expanded="true" signature="1055:1227" ph="SELECT B.las... kasutaja_andmed" />
+            <marker date="1523811405875" expanded="true" signature="1719:1785" ph="SELECT * FRO... kasutaja" />
+            <marker date="1523811405875" expanded="true" signature="2248:2456" ph="UPDATE headread.kasutaja_andmed... " />
+            <marker date="1523811405875" expanded="true" signature="3110:3165" ph="INSERT INTO kasutaja" />
+            <marker date="1523811405875" expanded="true" signature="3483:3555" ph="INSERT INTO kasutaja_andmed" />
+            <marker date="1523811405875" expanded="true" signature="4005:4058" ph="INSERT INTO laadimised" />
+            <marker date="1523811405875" expanded="true" signature="4412:4505" ph="SELECT headr... laadimised" />
+            <marker date="1523811405875" expanded="true" signature="5094:5195" ph="DELETE FROM headread.laadimised... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="56" column="16" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/loggedInUsers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/indexJS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/LoggedInUserclient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/loggedInUserServer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#10#778#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

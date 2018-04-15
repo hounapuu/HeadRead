@@ -6,6 +6,7 @@ $(function () {
 var firstLoad = true;
 
 function mouseOver() {
+
     if (firstLoad) {
         firstLoad = false;
         var xhttp = new XMLHttpRequest();
