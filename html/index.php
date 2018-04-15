@@ -71,7 +71,7 @@
 <!-- Page name-->
 <h1><?= $testpage ?>
     <!--Tooltip-->
-    <span class="tooltip" onmouseover="mouseOver()"><img src="img/qm.png" alt="info"/>
+    <span class="tooltip" onmouseover="mouseOver()" onfocus="mouseOver()"><img src="img/qm.png" alt="info"/>
         <span class="tooltiptext" id="tooltip">
         </span>
     </span>
