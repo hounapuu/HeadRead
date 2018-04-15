@@ -93,10 +93,6 @@
             $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
             $user = $response->getGraphUser();
 
-            $file="loggedInUsers.txt";
-            $data=$user['name']."\n";
-            fwrite($file,$data);
-            fclose($file)
         ?>
         <?= $helloMessage . $user['name']; ?>. <br/>
         <?php
