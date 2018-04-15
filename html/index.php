@@ -19,8 +19,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title><?= $pageTitileLogIn ?></title>
 
-    <link rel="stylesheet" type="text/css" href="../styles/style.css"/>
-    <script src="../js/googlemaps.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <script src="js/googlemaps.js" type="text/javascript"></script>
     <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -35,19 +35,19 @@
 
 <!-- Navbar-->
 <div id="navbar-placeholder"></div>
-<script type="text/javascript" src="../js/indexJS.js"></script>
+<script type="text/javascript" src="js/indexJS.js"></script>
 
 <!--Language selection flags-->
 <div class="languages-flags">
-    <a href="index.php?language=est"><img src="../img/est.png" alt="eesti keeles"/></a>
-    <a href="index.php?language=en"><img src="../img/eng.png" alt="in english"/></a>
+    <a href="index.php?language=est"><img src="img/est.png" alt="eesti keeles"/></a>
+    <a href="index.php?language=en"><img src="img/eng.png" alt="in english"/></a>
     <div class="clear"></div>
 </div>
 
 <!-- Page name-->
 <h1><?= $testpage ?>
     <!--Tooltip-->
-    <span class="tooltip" onmouseover="mouseOver()" onfocus="mouseOver()"><img src="../img/qm.png" alt="info"/>
+    <span class="tooltip" onmouseover="mouseOver()" onfocus="mouseOver()"><img src="img/qm.png" alt="info"/>
         <span class="tooltiptext" id="tooltip">
         </span>
     </span>
