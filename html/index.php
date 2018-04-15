@@ -35,7 +35,7 @@
 
 <!-- Navbar-->
 <div id="navbar-placeholder"></div>
-<script type="text/javascript" src="indexJS.js"></script>
+<script type="text/javascript" src="js/indexJS.js"></script>
 
 <!--Language selection flags-->
 <div class="languages-flags">
