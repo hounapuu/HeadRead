@@ -4,7 +4,7 @@
 <?php
     include_once("i18n/i18n.php");
     require_once __DIR__ . "/php-graph-sdk-5.4/src/Facebook/autoload.php";
-    require_once "database-handler.php";
+    require_once "utils/database-handler.php";
     session_start();
     if (!isset($_SESSION["fb_access_token"]) && !isset($_SESSION["smartValid"])) {
         header("Location: http://46.101.78.158/");
@@ -29,7 +29,7 @@
 <body itemscope itemtype="http://schema.org/WebPage">
     <!-- Navbar-->
     <div id="navbar-placeholder">
-        <?php include("navigationbar.html"); ?> 
+        <?php include("templates/navigationbar.html"); ?>
     </div>
     
 

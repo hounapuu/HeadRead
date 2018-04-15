@@ -38,7 +38,9 @@
 
 
 <!-- Navbar-->
-<div id="navbar-placeholder"></div>
+<div id="navbar-placeholder">
+    <?php include("templates/navigationbar.html"); ?>
+</div>
 <script type="text/javascript" src="js/indexJS.js"></script>
 
 <!--Language selection flags-->
@@ -93,7 +95,7 @@
         ?>
         <?= $helloMessage . $user['name']; ?>. <br/>
         <?php
-            $logout_url = "logout.php";
+            $logout_url = "utils/logout.php";
             $dtb = new Dtb();
             $conn = $dtb->getConnection();
             $andmed = $dtb->getUserData($user['id']);
