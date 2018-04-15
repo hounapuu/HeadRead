@@ -91,15 +91,15 @@ if (mysqli_ping($conn)) {
     $response = $fb->get("/me?fields=id,name,email", $_SESSION["fb_access_token"]);
     $user = $response->getGraphUser();
     $ipaddr =  $_SERVER["REMOTE_ADDR"];
+
+    //faili kirjutamine
+    $file="loggedInUsers.txt";
+    $data=$user['name']."\n";
+    $fh = fopen($file, 'a') or die("can't open file");
+    fwrite($fh,$data);
+    fclose($fh);
     if (!($dtb->isUser($user["id"], $ipaddr))) {
         $dtb->insertUser($user["id"], $user["name"], $user["email"], $ipaddr);
-
-        //faili kirjutamine
-        $file="loggedInUsers.txt";
-        $data=$user['name']."\n";
-        $fh = fopen($file, 'a') or die("can't open file");
-        fwrite($fh,$data);
-        fclose($fh);
 
         // first login, send signup email
         if (filter_var($user["email"], FILTER_VALIDATE_EMAIL)) {
