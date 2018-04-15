@@ -3,7 +3,7 @@ if(!session_id()){
     session_start();
 }
 require_once __DIR__ . "/php-graph-sdk-5.4/src/Facebook/autoload.php";
-require  __DIR__ . "/database-handler.php";
+require __DIR__ . "/database-handler.php";
 
 $fb = new Facebook\Facebook([
     "app_id" => "159317391454778",
