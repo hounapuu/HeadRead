@@ -24,6 +24,7 @@
             document.write(unescape("%3Cscript src='/js/jquery-3.3.1.min.js' type='text/javascript'%3E%3C/script%3E"));
         }
     </script>
+    <script type="text/javascript" src="js/LoggedInUserclient.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -54,4 +55,11 @@
         <?= $loginTime . $andmed[0]; ?>. <br/>
         <?= $ipMessage . $andmed[1]; ?>. <br/>
     </p>
+<br/>
+    <!-- datapush -->
+    <h2>Viimased sisselogimised sisselogitud kasutajad:</h2>
+    <pre id="loggedInUsers"></pre>
+
+
+
 </body>

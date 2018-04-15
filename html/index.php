@@ -23,8 +23,6 @@
     <script src="js/googlemaps.js" type="text/javascript"></script>
     <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-    <script type="text/javascript" src="js/LoggedInUserclient.js"></script>
     <script type="text/javascript">
         if (typeof jQuery == 'undefined') {
             document.write(unescape("%3Cscript src='/js/jquery-3.3.1.min.js' type='text/javascript'%3E%3C/script%3E"));
@@ -54,9 +52,6 @@
         </span>
     </span>
 </h1>
-<!-- datapush -->
-<h1>Response from server:</h1>
-<div id="loggedInUsers"><p>Text</p></div>
 
 <!-- Facebook log in-->
 <p id="status">

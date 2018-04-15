@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="027ba45b-fff9-4dfc-b876-40a4bc315afd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/html/fb-callback.php" afterPath="$PROJECT_DIR$/html/fb-callback.php" />
+      <change beforePath="$PROJECT_DIR$/html/index.php" afterPath="$PROJECT_DIR$/html/index.php" />
+      <change beforePath="$PROJECT_DIR$/html/statistics.php" afterPath="$PROJECT_DIR$/html/statistics.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="134">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -33,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fb-callback.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fb-callback.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/fb-callback.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+            <state relative-caret-position="306">
+              <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -85,22 +86,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database-handler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/database-handler.php">
+      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/statistics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1523811405875" expanded="true" signature="580:619" ph="SELECT COUNT... kasutaja" />
-                <marker date="1523811405875" expanded="true" signature="1055:1227" ph="SELECT B.las... kasutaja_andmed" />
-                <marker date="1523811405875" expanded="true" signature="1719:1785" ph="SELECT * FRO... kasutaja" />
-                <marker date="1523811405875" expanded="true" signature="2248:2456" ph="UPDATE headread.kasutaja_andmed... " />
-                <marker date="1523811405875" expanded="true" signature="3110:3165" ph="INSERT INTO kasutaja" />
-                <marker date="1523811405875" expanded="true" signature="3483:3555" ph="INSERT INTO kasutaja_andmed" />
-                <marker date="1523811405875" expanded="true" signature="4005:4058" ph="INSERT INTO laadimised" />
-                <marker date="1523811405875" expanded="true" signature="4412:4505" ph="SELECT headr... laadimised" />
-                <marker date="1523811405875" expanded="true" signature="5094:5195" ph="DELETE FROM headread.laadimised... " />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="26" column="75" lean-forward="false" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,7 +155,6 @@
         <option value="$PROJECT_DIR$/html/pay.php" />
         <option value="$PROJECT_DIR$/html/contact.php" />
         <option value="$PROJECT_DIR$/html/styles/style.css" />
-        <option value="$PROJECT_DIR$/html/statistics.php" />
         <option value="$PROJECT_DIR$/html/user.php" />
         <option value="$PROJECT_DIR$/html/i18n/est.php" />
         <option value="$PROJECT_DIR$/html/tooltipText.txt" />
@@ -176,8 +166,9 @@
         <option value="$PROJECT_DIR$/html/loggedInUserServer.php" />
         <option value="$PROJECT_DIR$/html/js/LoggedInUserclient.js" />
         <option value="$PROJECT_DIR$/html/loggedInUsers.txt" />
-        <option value="$PROJECT_DIR$/html/index.php" />
         <option value="$PROJECT_DIR$/html/fb-callback.php" />
+        <option value="$PROJECT_DIR$/html/index.php" />
+        <option value="$PROJECT_DIR$/html/statistics.php" />
       </list>
     </option>
   </component>
@@ -371,12 +362,12 @@
       <workItem from="1522687137007" duration="76000" />
       <workItem from="1523642824665" duration="4427000" />
       <workItem from="1523808305978" duration="840000" />
-      <workItem from="1523821872811" duration="1782000" />
+      <workItem from="1523821872811" duration="2133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36853000" />
+    <option name="totallyTimeSpent" value="37204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="10" width="1296" height="1000" extended-state="6" />
@@ -634,14 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/statistics.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1972">
@@ -761,18 +744,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.php">
+    <entry file="file://$PROJECT_DIR$/html/fb-callback.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/fb-callback.php">
+    <entry file="file://$PROJECT_DIR$/html/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+        <state relative-caret-position="134">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="75" lean-forward="false" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
           <folding />
         </state>
       </provider>
