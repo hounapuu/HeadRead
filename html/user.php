@@ -19,7 +19,7 @@
     <meta name="description" content="Paremad Read Kasutaja profiili seaded">
     <meta name="keywords" content="Kasutaja profiil, avatar, profiilipilt, profiilipildi üleslaadimine">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         if (typeof jQuery == "undefined") {
