@@ -4,7 +4,7 @@
     <!-- Connects language files to this file-->
     <?php
         include_once("i18n/i18n.php");
-        require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
+        require_once __DIR__ . "/php-graph-sdk-5.4/src/Facebook/autoload.php";
         require_once "database-handler.php";
 
         if (!session_id()) { //Check if facebook session is up, if not then start a new one
@@ -26,7 +26,7 @@
         <script src="js/googlemaps.js" type="text/javascript"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript">
-            if (typeof jQuery == 'undefined') {
+            if (typeof jQuery == "undefined") {
                 document.write(unescape("%3Cscript src='/js/jquery-3.3.1.min.js' type='text/javascript'%3E%3C/script%3E"));
             }
         </script>
@@ -63,15 +63,15 @@
         <?php
             // Initialize the Facebook PHP SDK v5.
             $fb = new Facebook\Facebook([
-                'app_id' => '159317391454778',
-                'app_secret' => '725df95714f605f633f67d52fe8994bf',
-                'default_graph_version' => 'v2.10',
+                "app_id" => "159317391454778",
+                "app_secret" => "725df95714f605f633f67d52fe8994bf",
+                "default_graph_version" => "v2.10",
             ]);
             //helper is used to log user in
             $helper = $fb->getRedirectLoginHelper();
 
             try {
-                $session = $_SESSION['fb_access_token'];
+                $session = $_SESSION["fb_access_token"];
             } catch (FacebookRequestException $ex) {
                 // When Facebook returns an error
                 echo $ex;
@@ -88,15 +88,15 @@
                 ?>
                 <?= $isLoggedin; ?><br/>
                 <?php
-                    $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
+                    $response = $fb->get("/me?fields=id,name,email", $_SESSION["fb_access_token"]);
                     $user = $response->getGraphUser();
                 ?>
-                <?= $helloMessage . $user['name']; ?>. <br/>
+                <?= $helloMessage . $user["name"]; ?>. <br/>
                 <?php
                     $logout_url = "logout.php";
                     $dtb = new Dtb();
                     $conn = $dtb->getConnection();
-                    $andmed = $dtb->getUserData($user['id']);
+                    $andmed = $dtb->getUserData($user["id"]);
                     $users = $dtb->getUserCount();
                 ?>
                 <?= $userCount . $users; ?> <br/>
@@ -117,8 +117,8 @@
                 ?>
                     <?= $isNotLoggedin; ?><br/>
                 <?php
-                    $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
-                    $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
+                    $permissions = ["email", "public_profile", "user_birthday"]; // Optional permissions
+                    $loginUrl = $helper->getLoginUrl("http://46.101.78.158/fb-callback.php", $permissions);
                 ?>
 
                 <button id="loginButton" class="float-left submit-button" rel="nofollow" itemprop="url"><?= $loginLink ?></button>
@@ -129,7 +129,7 @@
                         <input type="text" id="idNumber" placeholder="Sisesta isikukood" name="idNumber">
                     </div>
                     <div>
-                        <label for="idSubmit">Isikukood</label>
+                        <label for="idSubmit">Kinnita</label>
                         <button type="submit" id="idSubmit">Kinnita</button>
                     </div>
                 </form>
