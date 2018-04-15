@@ -17,7 +17,7 @@
     <meta name="description" content="Paremad Read kasutajate statistika">
     <meta name="keywords" content="Kasutajate statistika, kasutajad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         if (typeof jQuery == "undefined") {
@@ -29,7 +29,7 @@
 <body itemscope itemtype="http://schema.org/WebPage">
     <!-- Navbar-->
     <div id="navbar-placeholder">
-        <?php include("navigationbar.html"); ?>
+        <?php include("templates/navigationbar.html"); ?>
     </div>
     
 

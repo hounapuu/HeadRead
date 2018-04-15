@@ -39,7 +39,7 @@
 
 <!-- Navbar-->
 <div id="navbar-placeholder">
-    <?php include("navigationbar.html"); ?>
+    <?php include("templates/navigationbar.html"); ?>
 </div>
 <script type="text/javascript" src="js/indexJS.js"></script>
 
@@ -120,7 +120,7 @@
             <?= $isNotLoggedin; ?><br/>
         <?php
             $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
-            $loginUrl = $helper->getLoginUrl('http://46.101.78.158/utils/fb-callback.php', $permissions);
+            $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
         ?>
 
             <button id="loginButton" class="float-left submit-button"><?= $loginLink ?></button>
