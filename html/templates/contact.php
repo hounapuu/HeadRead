@@ -2,13 +2,13 @@
 <html lang="et">
 
 <?php
-    include_once "utils/pay.php";
+    include_once "pay.php";
 ?>
 
 <head>
     <title>Paremad Read - Kontaktinfo</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <meta name="description" content="Paremad Read kontaktinfo">
+    <meta name="description" content="Paremad Read kontaktinfo">    
     <meta name="keywords" content="kontaktid, kontaktinfo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -24,9 +24,10 @@
 <body itemscope itemtype="http://schema.org/ContactPage">>
     <!-- Navbar-->
     <div id="navbar-placeholder">
-        <?php include("templates/navigationbar.html"); ?>
+        <?php include("navigationbar.html"); ?> 
     </div>
 
+    
     <!-- contact information -->
     <p itemprop="text">Palju muud kontaktinfot <br/></p>
 
