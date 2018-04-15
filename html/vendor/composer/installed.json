@@ -1,0 +1,52 @@
+[
+    {
+        "name": "sk-id-solutions/smart-id-php-client",
+        "version": "v1.2",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/SK-EID/smart-id-php-client.git",
+            "reference": "7bcd074f2326194fd379d43ea721bb09b81c2881"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/SK-EID/smart-id-php-client/zipball/7bcd074f2326194fd379d43ea721bb09b81c2881",
+            "reference": "7bcd074f2326194fd379d43ea721bb09b81c2881",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "5.7.14"
+        },
+        "time": "2018-02-21 01:20:01",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Sk\\SmartId\\": "src/",
+                "Sk\\SmartId\\Tests": "tests/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "Eugene Serkin",
+                "homepage": "https://github.com/jeserkin"
+            }
+        ],
+        "description": "Smart-ID Relying Party PHP Api v5 client",
+        "homepage": "https://github.com/SK-EID/smart-id-php-client",
+        "keywords": [
+            "api",
+            "party",
+            "relying",
+            "smart-id"
+        ]
+    }
+]

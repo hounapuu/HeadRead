@@ -5,7 +5,7 @@
     require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
     require_once "database-handler.php";
     session_start();
-    if (!isset($_SESSION['fb_access_token'])) {
+    if (!isset($_SESSION['fb_access_token']) || !isset($_SESSION['smartValid'])) {
         header("Location: http://46.101.78.158/");
     }
 ?>

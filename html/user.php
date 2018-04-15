@@ -4,7 +4,7 @@
     error_reporting(E_ALL);
     ini_set('display_errors',1);
     session_start();
-    if (!isset($_SESSION['fb_access_token'])) {
+    if (!isset($_SESSION['fb_access_token']) || !isset($_SESSION['smartValid'])) {
         header("Location: http://46.101.78.158/");
     }
     include_once 'upload.php';

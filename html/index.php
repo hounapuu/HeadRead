@@ -2,15 +2,17 @@
 
 <!-- Connects language files to this file-->
 <?php
-    include_once("i18n/i18n.php");
-    require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
-    require_once "database-handler.php";
 
-    if (!session_id()) { //Check if facebook session is up, if not then start a new one
-        session_start();
-    }
+include_once("i18n/i18n.php");
+require_once __DIR__ . '/php-graph-sdk-5.4/src/Facebook/autoload.php';
+require_once "database-handler.php";
 
-    use Facebook\FacebookRequestException;
+if (!session_id()) { //Check if facebook session is up, if not then start a new one
+    session_start();
+}
+
+use Facebook\FacebookRequestException;
+
 
 ?>
 
@@ -81,78 +83,85 @@
 <p id="status">
     <!--TODO: cleanup !-->
     <?php
-        // Initialize the Facebook PHP SDK v5.
-        $fb = new Facebook\Facebook([
-            'app_id' => '159317391454778',
-            'app_secret' => '725df95714f605f633f67d52fe8994bf',
-            'default_graph_version' => 'v2.10',
-        ]);
-        //helper is used to log user in
-        $helper = $fb->getRedirectLoginHelper();
+    // Initialize the Facebook PHP SDK v5.
+    $fb = new Facebook\Facebook([
+        'app_id' => '159317391454778',
+        'app_secret' => '725df95714f605f633f67d52fe8994bf',
+        'default_graph_version' => 'v2.10',
+    ]);
+    //helper is used to log user in
+    $helper = $fb->getRedirectLoginHelper();
 
-        try {
-            $session = $_SESSION['fb_access_token'];
-        } catch (FacebookRequestException $ex) {
-            // When Facebook returns an error
-            echo $ex;
+    try {
+        $session = $_SESSION['fb_access_token'];
+    } catch (FacebookRequestException $ex) {
+        // When Facebook returns an error
+        echo $ex;
 
-        } catch (\Exception $ex) {
-            // When validation fails or other local issues
-            echo $ex;
+    } catch (\Exception $ex) {
+        // When validation fails or other local issues
+        echo $ex;
 
-        }
+    }
 
-        //show if the user is logged in or not
-        if ($session) {
-            //Logged in
-            ?>
-            <?= $isLoggedin; ?><br/>
-        <?php
-            $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
-            $user = $response->getGraphUser();
+    //show if the user is logged in or not
+    if ($session || $_SESSION['smartValid']) {
+        //Logged in
         ?>
-        <?= $helloMessage . $user['name']; ?>. <br/>
-        <?php
-            $logout_url = "logout.php";
-            $dtb = new Dtb();
-            $conn = $dtb->getConnection();
-            $andmed = $dtb->getUserData($user['id']);
-            $users = $dtb->getUserCount();
-        ?>
-        <?= $userCount . $users; ?> <br/>
-
-        <?= $loginTime . $andmed[0]; ?>. <br/>
-        <?= $ipMessage . $andmed[1]; ?>. <br/>
-
-            <button id="logoutButton" class="float-left submit-button"><?= $logoutMessage ?></button>
-
-            <script type="text/javascript">
-                document.getElementById("logoutButton").onclick = function () {
-                    location.href = "<?=$logout_url?>";
-                };
-            </script>
-        <?php
-
-            } else {
-        ?>
-            <?= $isNotLoggedin; ?><br/>
-        <?php
-            $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
-            $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
-        ?>
-
-            <button id="loginButton" class="float-left submit-button"><?= $loginLink ?></button>
-
-            <script type="text/javascript">
-                document.getElementById("loginButton").onclick = function () {
-                    location.href = "<?=$loginUrl?>";
-                };
-            </script>
-            <?php
-
-        }
-
+        <?= $isLoggedin; ?><br/>
+    <?php
+    $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
+    $user = $response->getGraphUser();
     ?>
+    <?= $helloMessage . $user['name']; ?>. <br/>
+    <?php
+    $logout_url = "logout.php";
+    $dtb = new Dtb();
+    $conn = $dtb->getConnection();
+    $andmed = $dtb->getUserData($user['id']);
+    $users = $dtb->getUserCount();
+    ?>
+    <?= $userCount . $users; ?> <br/>
+
+    <?= $loginTime . $andmed[0]; ?>. <br/>
+    <?= $ipMessage . $andmed[1]; ?>. <br/>
+
+        <button id="logoutButton" class="float-left submit-button"><?= $logoutMessage ?></button>
+
+        <script type="text/javascript">
+            document.getElementById("logoutButton").onclick = function () {
+                location.href = "<?=$logout_url?>";
+            };
+        </script>
+        <?php
+
+    } else {
+    ?>
+    <?= $isNotLoggedin; ?><br/>
+    <?php
+    $permissions = ['email', 'public_profile', 'user_birthday']; // Optional permissions
+    $loginUrl = $helper->getLoginUrl('http://46.101.78.158/fb-callback.php', $permissions);
+    ?>
+
+    <button id="loginButton" class="float-left submit-button"><?= $loginLink ?></button>
+    <br>
+<form method="post" action="/smartid.php">
+    <input type="text" id="idNumber" placeholder="Sisesta isikukood" name="idNumber">
+    <input type="submit">
+</form>
+
+
+
+<script  type="text/javascript">
+    document.getElementById("loginButton").onclick = function () {
+        location.href = "<?=$loginUrl?>";
+    };
+</script>
+<?php
+
+}
+
+?>
 </p>
 
 <!--Random testing line-->
