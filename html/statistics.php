@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="et">
 
 <?php
     include_once("i18n/i18n.php");
@@ -11,9 +12,11 @@
 ?>
 
 <head>
+    <title>Paremad Read - Statistika</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Statistika</title>
-
+    <meta name="description" content="Paremad Read kasutajate statistika">
+    <meta name="keywords" content="Kasutajate statistika, kasutajad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -23,7 +26,7 @@
     </script>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
     <!-- Navbar-->
     <div id="navbar-placeholder"></div>
     <script type="text/javascript">
@@ -34,7 +37,7 @@
         });
     </script>
 
-    <p>
+    <p itemprop="mainContentOfPage">
         <?php
         // Initialize the Facebook PHP SDK v5.
         $fb = new Facebook\Facebook([

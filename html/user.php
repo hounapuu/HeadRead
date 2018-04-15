@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="et">
 
 <?php
     error_reporting(E_ALL);
@@ -13,9 +14,11 @@
 ?>
 
 <head>
+    <title>Paremad Read - Kasutaja seaded</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Kasutaja</title>
-
+    <meta name="description" content="Paremad Read Kasutaja profiili seaded">
+    <meta name="keywords" content="Kasutaja profiil, avatar, profiilipilt, profiilipildi üleslaadimine">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -25,7 +28,7 @@
     </script>
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/ProfilePage">
 <!-- Navbar-->
 <div id="navbar-placeholder"></div>
 <script type="text/javascript">
