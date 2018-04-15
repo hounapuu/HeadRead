@@ -29,41 +29,34 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/ProfilePage">
-<!-- Navbar-->
-<div id="navbar-placeholder"></div>
-<script type="text/javascript">
-    $(function(){
-        $("#navbar-placeholder").load("navigationbar.html", function () {
-            $("#navbarUser").addClass("navbarActive");
-        });
-    });
-</script>
+    <!-- Navbar-->
+    <div id="navbar-placeholder">
+        <?php include("navigationbar.html"); ?>
+    </div>
 
-<p><br/><br/></p>
+    <p><br/><br/></p>
 
-<form action="user.php" method="post" enctype="multipart/form-data">
-    Vali fail:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Lae üles" name="submit">
-    <input type="submit" value="Kustuta" name="delete">
+    <form action="user.php" method="post" enctype="multipart/form-data">
+        Vali fail:
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Lae üles" name="submit">
+        <input type="submit" value="Kustuta" name="delete">
+    </form>
+    
+    <?php
+        $dtb = new Dtb();
+        $fb = new Facebook\Facebook([
+            'app_id' => '159317391454778',
+            'app_secret' => '725df95714f605f633f67d52fe8994bf',
+            'default_graph_version' => 'v2.10',
+        ]);
 
+        $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
+        $user = $response->getGraphUser();
+        $rows = $dtb->getImages($user['id']);
+        if (count($rows) > 0) {
+            echo("<img src='" . $rows[0][0] . "'/>");
 
-
-</form>
-<?php
-    $dtb = new Dtb();
-    $fb = new Facebook\Facebook([
-        'app_id' => '159317391454778',
-        'app_secret' => '725df95714f605f633f67d52fe8994bf',
-        'default_graph_version' => 'v2.10',
-    ]);
-
-    $response = $fb->get('/me?fields=id,name,email', $_SESSION['fb_access_token']);
-    $user = $response->getGraphUser();
-    $rows = $dtb->getImages($user['id']);
-    if (count($rows) > 0) {
-        echo("<img src='" . $rows[0][0] . "'/>");
-
-    }
-?>
+        }
+    ?>
 </body>

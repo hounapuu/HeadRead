@@ -28,14 +28,10 @@
 
 <body itemscope itemtype="http://schema.org/WebPage">
     <!-- Navbar-->
-    <div id="navbar-placeholder"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#navbar-placeholder").load("navigationbar.html", function () {
-                $("#navbarStatistics").addClass("navbarActive");
-            });
-        });
-    </script>
+    <div id="navbar-placeholder">
+        <?php include("navigationbar.html"); ?> 
+    </div>
+    
 
     <p itemprop="mainContentOfPage">
         <?php

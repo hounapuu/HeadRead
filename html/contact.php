@@ -23,14 +23,10 @@
 
 <body itemtype="http://schema.org/ContactPage">>
     <!-- Navbar-->
-    <div id="navbar-placeholder"></div>
-    <script type="text/javascript">
-        $(function() {
-            $("#navbar-placeholder").load("navigationbar.html", function () {
-                $("#navbarContact").addClass("navbarActive");
-            });
-        });
-    </script>
+    <div id="navbar-placeholder">
+        <?php include("navigationbar.html"); ?> 
+    </div>
+
     
     <!-- contact information -->
     <p itemprop="text">Palju muud kontaktinfot <br/></p>

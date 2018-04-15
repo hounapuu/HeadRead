@@ -215,9 +215,7 @@ p{
         transform: scale(1);
     }
 }
-#smartidfield{
-    horiz-align: center;
-}
+
 div.smartbutton input{
     background-color: DodgerBlue; /* Blue background */
     background-image:url("../img/smartbutton.png")
