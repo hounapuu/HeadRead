@@ -149,7 +149,8 @@
         <form method="post" action="/smartid.php">
             <label for="idNumber">Isikukood</label>
             <input type="text" id="idNumber" placeholder="Sisesta isikukood" name="idNumber">
-            <input type="submit" rel="nofollow" itemprop="url">
+            <label for="idSubmit">Kinnita</label>
+            <input type="submit" id="idSubmit" rel="nofollow" itemprop="url">
         </form>
 
 
@@ -165,7 +166,7 @@
 
         <!-- Our location -->
         <div itemscope itemtype="http://schema.org/LocalBusiness">
-            <span itemprop="name">Paremad Read</span>
+            <span itemprop="name">Paremad Read asukoht</span>
             <p id="map" itemprop="hasMap"></p>
             <script defer="defer"
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBBRZiaZJycfXIp3rHPUSQIaGeMOn9pv4&amp;callback=initMap"

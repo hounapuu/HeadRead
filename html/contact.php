@@ -21,7 +21,7 @@
     </script>
 </head>
 
-<body itemtype="http://schema.org/ContactPage">>
+<body itemscope itemtype="http://schema.org/ContactPage">>
     <!-- Navbar-->
     <div id="navbar-placeholder">
         <?php include("navigationbar.html"); ?> 
@@ -34,7 +34,7 @@
     <!-- Payment-->
     <p>Et me saaksime oma tööd jätkata ja arendajatele kommi osta, jäta palun meile 5 euri :)</p>
 
-    <form method="post" action="http://localhost:3480/banklink/swedbank" id="pangalink" itemtype="https://schema.org/DonateAction">
+    <form method="post" action="http://localhost:3480/banklink/swedbank" id="pangalink" itemscope itemtype="https://schema.org/DonateAction">
         <!-- include all values as hidden form fields -->
         <?php foreach($fields as $key => $val):?>
             <input type="hidden" name="<?php echo $key; ?>" value="<?php echo htmlspecialchars($val); ?>" />
