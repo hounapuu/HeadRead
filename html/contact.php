@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-        if (typeof jQuery === 'undefined') {
+        if (typeof jQuery === "undefined") {
             document.write(unescape("%3Cscript src='/js/jquery-3.3.1.min.js' type='text/javascript'%3E%3C/script%3E"));
         }
     </script>
@@ -41,7 +41,7 @@
         <?php endforeach; ?>
         <div id="donate">
             <button type="submit" form="pangalink">
-                <em class='fa fa-credit-card'></em>
+                <em class="fa fa-credit-card"></em>
                 <span>Anneta</span>
             </button>
         </div>
@@ -49,16 +49,6 @@
     <!-- Payment result -->
 
     <?php
-    /**
-     * <button type="submit" class='centerMe' form="pangalink">
-    <div class='icon'>
-    <em class='fa fa-credit-card'></em>
-    </div>
-    <div class='text'>
-    <span>Anneta</span>
-    </div>
-    </button>
-     */
         if ($_GET["payment_action"]=="success") {
             echo "Annetus edukalt tehtud. Me täname Teid!";
         } elseif ($_GET["payment_action"]=="cancel") {

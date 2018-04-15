@@ -2,7 +2,7 @@
 if (!session_id()) { //Check if facebook session is up, if not then start a new one
     session_start();
 }
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . "/vendor/autoload.php";
 
 use Sk\SmartId\Client;
 use Sk\SmartId\Api\Data\NationalIdentity;
@@ -15,19 +15,19 @@ function alert($msg) {
 // Client setup. Note that these values are demo environment specific.
 $client = new Client();
 $client
-    ->setRelyingPartyUUID( '00000000-0000-0000-0000-000000000000' )
-    ->setRelyingPartyName( 'DEMO' )
-    ->setHostUrl( 'https://sid.demo.sk.ee/smart-id-rp/v1/' );
+    ->setRelyingPartyUUID( "00000000-0000-0000-0000-000000000000" )
+    ->setRelyingPartyName( "DEMO" )
+    ->setHostUrl( "https://sid.demo.sk.ee/smart-id-rp/v1/" );
 
 
 // For security reasons a new hash value must be created for each new authentication request
 // Consists of country and personal identity code
 
-$idNumber = trim($_POST['idNumber']);
-if ($idNumber == '' || strlen($idNumber)!=11) {
-    header('Location: http://46.101.78.158/');
+$idNumber = trim($_POST["idNumber"]);
+if ($idNumber == "" || strlen($idNumber)!=11) {
+    header("Location: http://46.101.78.158/");
 }
-$identity = new NationalIdentity( 'EE', $idNumber );
+$identity = new NationalIdentity( "EE", $idNumber );
 // For security reasons a new hash value must be created for each new authentication request
 $authenticationHash = AuthenticationHash::generate();
 
@@ -38,7 +38,7 @@ try
 {
     $authenticationResponse = $client->authentication()
         ->createAuthentication()
-        ->withNationalIdentity( $identity ) // or with document number: ->withDocumentNumber( 'PNOEE-1111111111-XXXX-XX' )
+        ->withNationalIdentity( $identity ) // or with document number: ->withDocumentNumber( "PNOEE-1111111111-XXXX-XX" )
         ->withAuthenticationHash( $authenticationHash )
         ->withCertificateLevel( CertificateLevelCode::QUALIFIED ) // Certificate level can either be "QUALIFIED" or "ADVANCED"
         ->authenticate();
@@ -58,7 +58,7 @@ $isValid = $authenticationResult->isValid();
 // When the result is not valid then the reason(s) for invalidity are obtainable like this:
 $errors = $authenticationResult->getErrors();
 if ($isValid==true) {
-    $_SESSION['smartValid'] = true;
+    $_SESSION["smartValid"] = true;
 }
 else{
     alert("Midagi läks valesti. Proovige hiljem uuesti.");
