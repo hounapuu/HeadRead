@@ -37,6 +37,8 @@ if (! isset($accessToken)) {
 }
 
 // Logged in
+
+
 echo "<h3>Access Token</h3>";
 var_dump($accessToken->getValue());
 
@@ -89,8 +91,15 @@ if (mysqli_ping($conn)) {
     $response = $fb->get("/me?fields=id,name,email", $_SESSION["fb_access_token"]);
     $user = $response->getGraphUser();
     $ipaddr =  $_SERVER["REMOTE_ADDR"];
+
+    //faili kirjutamine
+    $file_data =$user['name']."\n";
+    $file_data .= file_get_contents("loggedInUsers.txt");
+    file_put_contents("loggedInUsers.txt", $file_data);
+
     if (!($dtb->isUser($user["id"], $ipaddr))) {
         $dtb->insertUser($user["id"], $user["name"], $user["email"], $ipaddr);
+
         // first login, send signup email
         if (filter_var($user["email"], FILTER_VALIDATE_EMAIL)) {
             $to = $user["email"];
